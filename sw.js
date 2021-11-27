@@ -1,6 +1,4 @@
-self.addEventListener('install', (e) => {
-    console.log('[Service Worker] has been installed I think???');
-  });
+
   const cacheName = 'Project 002 Cache';
   
   const appShellFiles = [
