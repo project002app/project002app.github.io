@@ -28,7 +28,7 @@ let stuff = '';
 for (let i = 0; i < content.length; i++) {
   let entry = template.replace(/POS/g, (i + 1))
     .replace(/SCHEDULETYPE/g, content[i].scheduletype)
-    .replace(/PERIOD1/g, content[i].period1)
+    /*.replace(/PERIOD1/g, content[i].period1)
     .replace(/PERIOD2/g, content[i].period2)
     .replace(/PERIOD3/g, content[i].period3)
     .replace(/PERIOD4/g, content[i].period4)
@@ -37,8 +37,9 @@ for (let i = 0; i < content.length; i++) {
     .replace(/PERIOD7/g, content[i].period7)
     .replace(/PERIOD8/g, content[i].period8)
   entry = entry.replace('<a href=\'http:///\'></a>', '-');
-  content += entry;
+  content += entry;*/
 }
+console.log("umm done?");
 document.getElementById('stuff').innerHTML = stuff;
 
 //NOW, for THE SERVICE WORKER!!!!!!!!
