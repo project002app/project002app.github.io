@@ -38,6 +38,7 @@ document.getElementById('content').innerHTML = content;
 //NOW, for THE SERVICE WORKER!!!!!!!!
 if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("/projectpavanapp.github.io/sw.js");
+    console.log("Service worker is registered");
   }
 //This asks for permission to send notification and...sends a notification function in the end
 const button = document.getElementById('notifications');
