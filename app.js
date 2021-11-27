@@ -18,7 +18,7 @@ const template = `<article>
   <li><span>Period 1:</span> <strong>PERIOD8</strong></li>
   </ul>
 </article>`;
-let content = '';
+let something = '';
 for (let i = 0; i < games.length; i++) {
   let entry = template.replace(/POS/g, (i + 1))
     .replace(/SCHEDULETYPE/g, content[i].scheduletype)
@@ -33,7 +33,7 @@ for (let i = 0; i < games.length; i++) {
   entry = entry.replace('<a href=\'http:///\'></a>', '-');
   content += entry;
 }
-document.getElementById('content').innerHTML = content;
+document.getElementById('content').innerHTML = something;
 
 //NOW, for THE SERVICE WORKER!!!!!!!!
 console.log("Ready to register");
