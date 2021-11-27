@@ -28,6 +28,7 @@ self.addEventListener('install', (e) => {
       const cache = await caches.open(cacheName);
       console.log('[Service Worker] Caching all: app shell and content');
       await cache.addAll(contentToCache);
+      console.log("If I read this, THEN I ACTUALLY DID IT YAYAYAYYAYAYAYYAYYYYY");
     })());
   });
   
