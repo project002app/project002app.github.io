@@ -3,7 +3,7 @@
 //Also I removed this thingy "data-src='data/img/SLUG.jpg'" from the image tag, its just data-* whatever stuff, it weird but VERY cool
 //https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset
 //https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*
-const template = `<article>
+/*const template = `<article>
   <img src='data/contentimages/placeholder.png' data-src='data/contentimages/SLUG.jpg' alt='NAME'>
   <h3>#POS. NAME</h3>
   <ul>
@@ -33,7 +33,7 @@ for (let i = 0; i < content.length; i++) {
   entry = entry.replace('<a href=\'http:///\'></a>', '-');
   content += entry;
 }
-document.getElementById('content').innerHTML = something;
+document.getElementById('content').innerHTML = something;*/
 
 //NOW, for THE SERVICE WORKER!!!!!!!!
 console.log("Ready to register");
