@@ -27,7 +27,7 @@ const template = `<article>
 let stuff = '';
 for (let i = 0; i < content.length; i++) {
   let entry = template.replace(/POS/g, (i + 1))
-    .replace(/SCHEDULETYPE/c, content[i].scheduletype)
+    .replace(/SCHEDULETYPE/g, content[i].scheduletype)
     .replace(/PERIOD1/g, content[i].period1)
     .replace(/PERIOD2/g, content[i].period2)
     .replace(/PERIOD3/g, content[i].period3)
