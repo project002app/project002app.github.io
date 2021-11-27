@@ -24,22 +24,22 @@ const template = `<article>
   <li><span>Period 1:</span> <strong>PERIOD8</strong></li>
   </ul>
 </article>`;
-let something = '';
+let stuff = '';
 for (let i = 0; i < content.length; i++) {
-  let entry = template.replace(/POS/g, (i + 1))
-    .replace(/SCHEDULETYPE/g, content[i].scheduletype)
-    .replace(/PERIOD1/g, content[i].period1)
-    .replace(/PERIOD2/g, content[i].period2) 
-    .replace(/PERIOD3/g, content[i].period3)
-    .replace(/PERIOD4/g, content[i].period4)
-    .replace(/PERIOD5/g, content[i].period5)
-    .replace(/PERIOD6/g, content[i].period6)
-    .replace(/PERIOD7/g, content[i].period7)
-    .replace(/PERIOD8/g, content[i].period8)
+  let entry = template.replace(/POS/c, (i + 1))
+    .replace(/SCHEDULETYPE/c, content[i].scheduletype)
+    .replace(/PERIOD1/c, content[i].period1)
+    .replace(/PERIOD2/c, content[i].period2)
+    .replace(/PERIOD3/c, content[i].period3)
+    .replace(/PERIOD4/c, content[i].period4)
+    .replace(/PERIOD5/c, content[i].period5)
+    .replace(/PERIOD6/c, content[i].period6)
+    .replace(/PERIOD7/c, content[i].period7)
+    .replace(/PERIOD8/c, content[i].period8)
   entry = entry.replace('<a href=\'http:///\'></a>', '-');
   content += entry;
 }
-document.getElementById('content').innerHTML = something;
+document.getElementById('stuff').innerHTML = stuff;
 
 //NOW, for THE SERVICE WORKER!!!!!!!!
 console.log("Ready to register");
