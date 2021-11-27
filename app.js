@@ -1,3 +1,9 @@
+//NOW, for THE SERVICE WORKER!!!!!!!!
+console.log("Ready to register");
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register(".projectpavanapp/projectpavanapp.github.io/sw.js");
+    console.log("Service worker is registered");
+  }
 //Note: In line 3 with the image, you need placeholder image inside data => contentimages folder
 //Also I removed this thingy "data-src='data/img/SLUG.jpg'" from the image tag, its just data-* whatever stuff, it weird but VERY cool
 //https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset
@@ -35,12 +41,7 @@ for (let i = 0; i < games.length; i++) {
 document.getElementById('content').innerHTML = content;
 
 
-//NOW, for THE SERVICE WORKER!!!!!!!!
-console.log("Ready to register");
-if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("/projectpavanapp.github.io/sw.js");
-    console.log("Service worker is registered");
-  }
+
 //This asks for permission to send notification and...sends a notification function in the end
 const button = document.getElementById('notifications');
 button.addEventListener('click', () => {
