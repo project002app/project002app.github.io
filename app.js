@@ -3,7 +3,7 @@
 //https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset
 //https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*
 const template = `<article>
-  <img src='data/contentimages/placeholder.png' alt='NAME'>
+  <img src='data/contentimages/placeholder.png' data-src='data/contentimages/SLUG.jpg' alt='NAME'>
   <h3>#POS. NAME</h3>
   <ul>
   <li><span>Schedule:</span> <strong>SCHEDULETYPE</strong></li>
@@ -37,7 +37,7 @@ document.getElementById('content').innerHTML = content;
 
 //NOW, for THE SERVICE WORKER!!!!!!!!
 if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("/Project 002 Alpha/sw.js");
+    navigator.serviceWorker.register("/projectpavanapp.github.io/sw.js");
   }
 //This asks for permission to send notification and...sends a notification function in the end
 const button = document.getElementById('notifications');
