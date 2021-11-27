@@ -13,6 +13,23 @@ self.addEventListener('install', (e) => {
         'https://projectpavanapp.github.io/style.css'
   ];
   console.log("appShellFiles is created and is made");
+
+
+  /*const contentImages = [];
+  for (let i = 0; i < content.length; i++) {
+    contentImages.push(`data/img/${content[i].slug}.jpg`);
+  }*/
+  //removed this from the following line: ".concat(gamesImages);"
+  const contentToCache = appShellFiles;
+  
+  self.addEventListener('install', (e) => {
+    console.log('[Service Worker] Install');
+    e.waitUntil((async () => {
+      const cache = await caches.open(cacheName);
+      console.log('[Service Worker] Caching all: app shell and content');
+      await cache.addAll(contentToCache);
+    })());
+  });
   
   
   /*const appShellFiles = [
