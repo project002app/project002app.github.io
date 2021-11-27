@@ -3,6 +3,12 @@
 //Also I removed this thingy "data-src='data/img/SLUG.jpg'" from the image tag, its just data-* whatever stuff, it weird but VERY cool
 //https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset
 //https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*
+
+
+
+//Yeah forget this stuff I'm just gonna let the html take its time to load, then use the service worker to cache stuff
+
+
 /*const template = `<article>
   <img src='data/contentimages/placeholder.png' data-src='data/contentimages/SLUG.jpg' alt='NAME'>
   <h3>#POS. NAME</h3>

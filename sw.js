@@ -1,11 +1,13 @@
-
+self.addEventListener('install', (e) => {
+    console.log('The service worker is "installed", but idk what that means');
+  });
+  
   const cacheName = 'Project 002 Cache';
   
   const appShellFiles = [
         'https://projectpavanapp.github.io',
         'https://projectpavanapp.github.io/index.html',
         'https://projectpavanapp.github.io/app.js',
-        'https://projectpavanapp.github.io/content.js',
         'https://projectpavanapp.github.io/favicon.ico',
         'https://projectpavanapp.github.io/project002.webmanifest',
         'https://projectpavanapp.github.io/style.css'
@@ -21,7 +23,7 @@
   const contentToCache = appShellFiles;
   
   self.addEventListener('install', (e) => {
-    console.log('[Service Worker] Install');
+    console.log('[Service Worker] Installed');
     e.waitUntil((async () => {
       const cache = await caches.open(cacheName);
       console.log('[Service Worker] Caching all: app shell and content');
