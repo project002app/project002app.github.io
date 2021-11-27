@@ -23,14 +23,15 @@ self.addEventListener('install', (e) => {
   //https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Offline_Service_workers
   
   console.log("appShellFiles cache is created and is made");
-  
-//Gets the main mass image files and puts them in an array, and combines that array
-//with the one before this to create a thingy that will have all of the stuff to cache
-  const contentImages = [];
+
+/*Gets the main mass image files and puts them in an array, and combines that array
+with the one before this to create a thingy that will have all of the stuff to cache*/
+  /*const contentImages = [];
   for (let i = 0; i < content.length; i++) {
     contentImages.push(`data/contentimages/${content[i].imageholder}.png`);
-  }
-  const contentToCache = appShellFiles.concat(contentImages);
+  }*/
+  const contentToCache = appShellFiles;
+//.concat(contentImages)
 
 //Actually does the caching and takes list of stuff to cache and caches it
   self.addEventListener('install', (e) => {
