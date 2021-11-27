@@ -35,9 +35,9 @@ for (let i = 0; i < content.length; i++) {
     .replace(/PERIOD5/g, content[i].period5)
     .replace(/PERIOD6/g, content[i].period6)
     .replace(/PERIOD7/g, content[i].period7)
-    .replace(/PERIOD8/g, content[i].period8)
-  /*entry = entry.replace('<a href=\'http:///\'></a>', '-');
-  content += entry;*/
+    .replace(/PERIOD8/g, content[i].period8);
+  entry = entry.replace('<a href=\'http:///\'></a>', '-');
+  content += entry;
 }
 console.log("umm done?");
 document.getElementById('stuff').innerHTML = stuff;
