@@ -19,11 +19,11 @@ const template = `<article>
   </ul>
 </article>`;
 let something = '';
-for (let i = 0; i < games.length; i++) {
+for (let i = 0; i < content.length; i++) {
   let entry = template.replace(/POS/g, (i + 1))
     .replace(/SCHEDULETYPE/g, content[i].scheduletype)
     .replace(/PERIOD1/g, content[i].period1)
-    .replace(/PERIOD2/g, content[i].period2)
+    .replace(/PERIOD2/g, content[i].period2) 
     .replace(/PERIOD3/g, content[i].period3)
     .replace(/PERIOD4/g, content[i].period4)
     .replace(/PERIOD5/g, content[i].period5)
