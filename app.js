@@ -41,6 +41,7 @@ if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("https://projectpavanapp.github.io/sw.js");
     console.log("Service worker is registered");
   }
+//after 40 mins I GOT IT YESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
 
 //This asks for permission to send notification and...sends a notification function in the end
 const button = document.getElementById('notifications');
