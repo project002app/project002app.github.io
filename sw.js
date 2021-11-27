@@ -1,7 +1,7 @@
 self.addEventListener('install', (e) => {
-    console.log('The service worker is "installed", but idk what that means');
+    console.log('The service worker is existing now, from sw.js');
   });
-  
+//This code will cache the app shell
   const cacheName = 'Project 002 Cache';
   
   const appShellFiles = [
@@ -12,16 +12,14 @@ self.addEventListener('install', (e) => {
         'https://projectpavanapp.github.io/project002.webmanifest',
         'https://projectpavanapp.github.io/style.css'
   ];
-  console.log("appShellFiles is created and is made");
-
+  console.log("appShellFiles cache is created and is made");
 
   /*const contentImages = [];
   for (let i = 0; i < content.length; i++) {
     contentImages.push(`data/img/${content[i].slug}.jpg`);
   }*/
   //removed this from the following line: ".concat(gamesImages);"
-  const contentToCache = appShellFiles;
-  
+  const contentToCache = appShellFiles; 
   self.addEventListener('install', (e) => {
     console.log('[Service Worker] Installed');
     e.waitUntil((async () => {

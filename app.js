@@ -45,7 +45,7 @@ document.getElementById('content').innerHTML = something;*/
 console.log("Ready to register");
 if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("https://projectpavanapp.github.io/sw.js");
-    console.log("Service worker is registered");
+    console.log("Service worker is registered from app.js");
   }
 //after 40 mins I GOT IT YESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
 
