@@ -2,24 +2,37 @@ self.addEventListener('install', (e) => {
     console.log('The service worker is existing now, from sw.js');
   });
 //This code will cache the app shell
+  //Lists the files except the main mass image files to be cached
   const cacheName = 'Project 002 Cache';
-  
   const appShellFiles = [
         'https://projectpavanapp.github.io',
         'https://projectpavanapp.github.io/index.html',
         'https://projectpavanapp.github.io/app.js',
         'https://projectpavanapp.github.io/favicon.ico',
         'https://projectpavanapp.github.io/project002.webmanifest',
-        'https://projectpavanapp.github.io/style.css'
+        'https://projectpavanapp.github.io/style.css',
+        //Now to cache the images
+        'https://projectpavanapp.github.io/img for the main/formula e.jpg',
+        'https://projectpavanapp.github.io/icons for web app/computer 16x16.png',
   ];
+  /*Uh note: do not cache content.js file bc MDN said "You may notice we haven't cached game.js.
+  This is the file that contains the data we use when displaying our games. In reality this 
+  data would most likely come from an API endpoint or database and caching the data would 
+  mean updating it periodically when there was network connectivity. We won't go into that 
+  here, but the Periodic Background Sync API is good further reading on this topic."*/
+  //https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Offline_Service_workers
+  
   console.log("appShellFiles cache is created and is made");
-
-  /*const contentImages = [];
+  
+//Gets the main mass image files and puts them in an array, and combines that array
+//with the one before this to create a thingy that will have all of the stuff to cache
+  const contentImages = [];
   for (let i = 0; i < content.length; i++) {
-    contentImages.push(`data/img/${content[i].slug}.jpg`);
-  }*/
-  //removed this from the following line: ".concat(gamesImages);"
-  const contentToCache = appShellFiles; 
+    contentImages.push(`data/contentimages/${content[i].imageholder}.png`);
+  }
+  const contentToCache = appShellFiles.concat(contentImages);
+
+//Actually does the caching and takes list of stuff to cache and caches it
   self.addEventListener('install', (e) => {
     console.log('[Service Worker] Installed');
     e.waitUntil((async () => {
