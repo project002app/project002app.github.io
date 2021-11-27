@@ -38,7 +38,7 @@ document.getElementById('content').innerHTML = something;*/
 //NOW, for THE SERVICE WORKER!!!!!!!!
 console.log("Ready to register");
 if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("projectpavanapp.github.io/sw.js");
+    navigator.serviceWorker.register("https://projectpavanapp.github.io/sw.js");
     console.log("Service worker is registered");
   }
 
