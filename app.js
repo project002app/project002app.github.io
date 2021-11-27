@@ -37,11 +37,11 @@ for (let i = 0; i < content.length; i++) {
     .replace(/PERIOD7/g, content[i].period7)
     .replace(/PERIOD8/g, content[i].period8);
   entry = entry.replace('<a href=\'http:///\'></a>', '-');
-  content += entry;
+  stuff += entry;
 }
 console.log("umm done?");
 document.getElementById('stuff').innerHTML = stuff;
-
+console.log("yes done");
 //NOW, for THE SERVICE WORKER!!!!!!!!
 console.log("Ready to register");
 if ("serviceWorker" in navigator) {
