@@ -9,6 +9,7 @@
         period6: 'f',
         period7: 'g',
         period8: 'h',
+        imageholder: 'Regular',
       },
       {
         scheduletype: 'Monday',
@@ -20,6 +21,7 @@
         period6: 'f2',
         period7: 'g2',
         period8: 'h2',
+        imageholder: 'Monday',
       },
       {
         scheduletype: 'Pep Rally',
@@ -31,6 +33,7 @@
         period6: 'f3',
         period7: 'g3',
         period8: 'h3',
+        imageholder: 'Pep Rally',
       }
   ];
 

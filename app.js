@@ -10,7 +10,7 @@
 
 
 const template = `<article>
-  <img src='data/contentimages/placeholder.png' data-src='data/contentimages/SLUG.jpg' alt='NAME'>
+  <img src='data/contentimages/placeholder.png' data-src='data/contentimages/IMGHOLDER.png' alt='SCHEDULETYPE'>
   <h3>#POS. NAME</h3>
   <ul>
   <li><span>Schedule:</span> <strong>SCHEDULETYPE</strong></li>
@@ -35,13 +35,15 @@ for (let i = 0; i < content.length; i++) {
     .replace(/PERIOD5/g, content[i].period5)
     .replace(/PERIOD6/g, content[i].period6)
     .replace(/PERIOD7/g, content[i].period7)
-    .replace(/PERIOD8/g, content[i].period8);
+    .replace(/PERIOD8/g, content[i].period8)
+    .replace(/IMGHOLDER/g, content[i].imageholder);
   entry = entry.replace('<a href=\'http:///\'></a>', '-');
   stuff += entry;
 }
-console.log("umm done?");
 document.getElementById('stuff').innerHTML = stuff;
-console.log("yes done");
+console.log("The template has been generated");
+
+
 //NOW, for THE SERVICE WORKER!!!!!!!!
 console.log("Ready to register");
 if ("serviceWorker" in navigator) {
@@ -73,3 +75,28 @@ function randomNotification() {
     setTimeout(randomNotification, 30000);
   }
   
+  //Now to...progressively load these images and stuff
+  const imagesToLoad = document.querySelectorAll('img[data-src]');
+  const loadImages = (image) => {
+    image.setAttribute('src', image.getAttribute('data-src'));
+    image.onload = () => {
+      image.removeAttribute('data-src');
+    };
+  };
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((items) => {
+      items.forEach((item) => {
+        if (item.isIntersecting) {
+          loadImages(item.target);
+          observer.unobserve(item.target);
+        }
+      });
+    });
+    imagesToLoad.forEach((img) => {
+      observer.observe(img);
+    });
+  } else {
+    imagesToLoad.forEach((img) => {
+      loadImages(img);
+    });
+  }
