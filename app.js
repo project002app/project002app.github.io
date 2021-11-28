@@ -47,7 +47,7 @@ console.log("The template has been generated");
 //NOW, for THE SERVICE WORKER!!!!!!!!
 console.log("Ready to register");
 if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("https://projectpavanapp.github.io/sw.js");
+    navigator.serviceWorker.register("https://projectpavanapp.github.io/sw.js", {scope: 'https://projectpavanapp.github.io'});
     console.log("Service worker is registered from app.js");
   }
 //after 40 mins I GOT IT YESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
