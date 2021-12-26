@@ -14,7 +14,7 @@ const template = `<article>
   <h3>#POS. NAME</h3>
   <ul>
   <li><span class="experimental">Schedule:</span> <strong>SCHEDULETYPE</strong></li>
-  <li><span>Period 1:</span> <strong>PERIOD1</strong></li>
+  <li><span style="color: red;">Period 1:</span> <strong>PERIOD1</strong></li>
   <li><span>Period 1:</span> <strong>PERIOD2</strong></li>
   <li><span>Period 1:</span> <strong>PERIOD3</strong></li>
   <li><span>Period 1:</span> <strong>PERIOD4</strong></li>
