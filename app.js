@@ -13,7 +13,7 @@ const template = `<article>
   <img src='data/contentimages/placeholder.png' data-src='data/contentimages/IMGHOLDER.png' alt='SCHEDULETYPE'>
   <h3>#POS. NAME</h3>
   <ul>
-  <li><span>Schedule:</span> <strong>SCHEDULETYPE</strong></li>
+  <li><span class="experimental">Schedule:</span> <strong>SCHEDULETYPE</strong></li>
   <li><span>Period 1:</span> <strong>PERIOD1</strong></li>
   <li><span>Period 1:</span> <strong>PERIOD2</strong></li>
   <li><span>Period 1:</span> <strong>PERIOD3</strong></li>
