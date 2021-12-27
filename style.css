@@ -33,6 +33,58 @@
 
 .theschedulegrid {
     display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /*grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));*/
+    
+    
+    
+    
+    /*grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;*/
+    /*grid-template-areas: "regular monday peprally special homeroom club";*/
+
+}
+.cardformatter1 {
+    padding: 3vw;
+    border: 1px solid black;
+    
+    display: flex;
+    justify-content: center;
     
 }
-
+.cardformatter2 {
+    padding: 3vw;
+    border: 1px solid black;
+    
+    display: flex;
+    justify-content: center;
+}
+.cardformatter3 {
+    padding: 3vw;
+    border: 1px solid black;
+    
+    display: flex;
+    justify-content: center;
+}
+.cardformatter4 {
+    padding: 3vw;
+    border: 1px solid black;
+    
+    display: flex;
+    justify-content: center;
+}
+.cardformatter5 {
+    padding: 3vw;
+    border: 1px solid black;
+    
+    display: flex;
+    justify-content: center;
+}
+.cardformatter6 {
+    padding: 3vw;
+    border: 1px solid black;
+    
+    display: flex;
+    justify-content: center;
+}
