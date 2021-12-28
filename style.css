@@ -34,7 +34,7 @@
 .theschedulegrid {
     display: grid;
     grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     /*grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));*/
     
     
@@ -87,4 +87,10 @@
     
     display: flex;
     justify-content: center;
+}
+@media only screen and (max-width: 1000px) {
+	.theschedulegrid {
+        color: red;
+        font-size: 30px;
+    }
 }
