@@ -3,11 +3,14 @@ function supremefunctionofhope() {
     console.log("I am Dr. Frankenstein");
 }
 //Start of the right side info holders
+const regular = document.querySelector('.regularinfoholder');
 function regularfunction() {
-    const regular = document.querySelector('.regularinfoholder');
-    if(document.querySelector('.mondayinfoholder').style.display === "block"){
+    //const regular = document.querySelector('.regularinfoholder');
+    /*if(document.querySelector('.mondayinfoholder').style.display === "block"){
         document.querySelector('.mondayinfoholder').style.display = "none";
-    }
+    }*/
+
+
     if(regular.style.display === "block"){
         regular.style.display = "none";
     }else{
