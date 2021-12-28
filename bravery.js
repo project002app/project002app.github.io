@@ -5,10 +5,10 @@ function supremefunctionofhope() {
 function testfunction() {
     const racecar = document.querySelector('.scheduleinfoholder')
     
-    if(racecar.style.display === "none"){
-        racecar.style.display = "block";
-    }else{
+    if(racecar.style.display === "block"){
         racecar.style.display = "none";
+    }else{
+        racecar.style.display = "block";
         
     }
     //This is the old way, with ID, and that is torture

@@ -57,6 +57,7 @@
 .scheduleinfoholder {
     width: 50px;
     flex-grow: 1;
+    display: none;
 }
 
 

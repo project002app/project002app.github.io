@@ -1,0 +1,28 @@
+/*And now, we begin at the beginning*/
+/*Home page page*/
+.headerbuttonsholder {
+    display: flex;
+    justify-content: flex-end;
+}
+.headerbuttonsmodifier {
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+.headerbuttonsmodifier:hover {
+    color: red;
+}
+
+.headertopthingoid {
+    margin-top: 3vh;
+    margin-bottom: 0px;
+    margin-left: 12vw;
+}
+.experimental {
+    color: red;
+}
+
