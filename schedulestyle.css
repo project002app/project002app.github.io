@@ -54,15 +54,12 @@
     flex-direction: row;
     justify-content: space-around;
 }
-
-.regularfullcell {
-    border: 0.5px solid red;
+.sideinfotableformatter {
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 40px;
 }
 
-.regularhalfcell {
-    border-left: 0.5px solid red;
-    border-right: 0.5px solid red;
-}
 td {
     border: 1px solid red;
     border-collapse: collapse;
@@ -71,39 +68,74 @@ th {
     border: 1px solid red;
     border-collapse: collapse;
 }
+.infoholdergeneralflexer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+.infoholderpfixer {
+    display: flex;
+    justify-content: center;
+}
+.sideinfocloserbutton {
+    color: #aaaaaa;
+    font-size: 28px;
+    font-weight: bold;
+    flex-grow: 0.01;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.sideinfocloserbutton:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 /*The right side info holders*/
 .regularinfoholder {
     flex-grow: 0.3;
     display: none;
     border: 0.1px solid black;
     margin-right: 15px;
-    
+    padding: 15px;
 }
 
 .mondayinfoholder {
-    width: 50px;
-    flex-grow: 1;
+    flex-grow: 0.3;
     display: none;
+    border: 0.1px solid black;
+    margin-right: 15px;
+    padding: 15px;
 }
 .peprallyinfoholder {
-    width: 50px;
-    flex-grow: 1;
+    flex-grow: 0.3;
     display: none;
+    border: 0.1px solid black;
+    margin-right: 15px;
+    padding: 15px;
 }
 .specialinfoholder {
-    width: 50px;
-    flex-grow: 1;
+    flex-grow: 0.3;
     display: none;
+    border: 0.1px solid black;
+    margin-right: 15px;
+    padding: 15px;
 }
 .homeroominfoholder {
-    width: 50px;
-    flex-grow: 1;
+    flex-grow: 0.3;
     display: none;
+    border: 0.1px solid black;
+    margin-right: 15px;
+    padding: 15px;
 }
 .clubinfoholder {
-    width: 50px;
-    flex-grow: 1;
+    flex-grow: 0.3;
     display: none;
+    border: 0.1px solid black;
+    margin-right: 15px;
+    padding: 15px;
 }
 /*End of the right side info holders*/
 
