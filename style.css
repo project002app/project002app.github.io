@@ -14,7 +14,7 @@
     margin-bottom: 5px;
     text-decoration: none;
     color: black;
-    font-size: 1.2vw;
+    font-size: 24px;
 }
 .headerbuttonsmodifier:hover {
     color: red;
@@ -45,52 +45,23 @@
     /*grid-template-areas: "regular monday peprally special homeroom club";*/
 
 }
-.cardformatter1 {
+
+.cardformatter {
     padding: 3vw;
     border: 1px solid black;
-    
-    display: flex;
-    justify-content: center;
-    
-}
-.cardformatter2 {
-    padding: 3vw;
-    border: 1px solid black;
-    
+    margin: 1vw;
     display: flex;
     justify-content: center;
 }
-.cardformatter3 {
-    padding: 3vw;
-    border: 1px solid black;
-    
-    display: flex;
-    justify-content: center;
-}
-.cardformatter4 {
-    padding: 3vw;
-    border: 1px solid black;
-    
-    display: flex;
-    justify-content: center;
-}
-.cardformatter5 {
-    padding: 3vw;
-    border: 1px solid black;
-    
-    display: flex;
-    justify-content: center;
-}
-.cardformatter6 {
-    padding: 3vw;
-    border: 1px solid black;
-    
-    display: flex;
-    justify-content: center;
-}
+
 @media only screen and (max-width: 1000px) {
 	.theschedulegrid {
         color: red;
         font-size: 30px;
+    }
+    .headerbuttonsmodifier {
+        font-size: 30px;
+        padding-left: 5vw;
+        padding-right: 5vw;
     }
 }
