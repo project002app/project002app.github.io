@@ -55,16 +55,29 @@
     justify-content: space-around;
 }
 
-.regularleftcell {
+.regularfullcell {
     border: 0.5px solid red;
 }
 
+.regularhalfcell {
+    border-left: 0.5px solid red;
+    border-right: 0.5px solid red;
+}
+td {
+    border: 1px solid red;
+    border-collapse: collapse;
+}
+th {
+    border: 1px solid red;
+    border-collapse: collapse;
+}
 /*The right side info holders*/
 .regularinfoholder {
     flex-grow: 0.3;
     display: none;
     border: 0.1px solid black;
     margin-right: 15px;
+    
 }
 
 .mondayinfoholder {
