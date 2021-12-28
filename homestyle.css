@@ -1,5 +1,5 @@
 /*And now, we begin at the beginning*/
-/*Home page page*/
+/*Home page header*/
 .headerbuttonsholder {
     display: flex;
     justify-content: flex-end;
@@ -26,3 +26,17 @@
     color: red;
 }
 
+/*Home Page body*.
+
+/*MEDIA QUERIES LAND*/
+@media only screen and (max-width: 1000px) {
+	.theschedulegrid {
+        color: red;
+        font-size: 30px;
+    }
+    .headerbuttonsmodifier {
+        font-size: 30px;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+}

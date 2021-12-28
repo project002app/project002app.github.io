@@ -2,7 +2,7 @@
     color: red;
 }
 /*And now, we begin at the beginning*/
-/*Home page page*/
+/*Schedules header*/
 .headerbuttonsholder {
     display: flex;
     justify-content: flex-end;
@@ -28,7 +28,7 @@
 
 
 
-/*SCHEDULES WEBPAGE, WARNING, YOU ARE CROSSING WEBPAGES NOW*/
+/*Schedules main body*/
 
 
 .theschedulegrid {
@@ -54,11 +54,40 @@
     justify-content: space-around;
     
 }
-.scheduleinfoholder {
+
+
+/*The right side info holders*/
+.regularinfoholder {
     width: 50px;
     flex-grow: 1;
     display: none;
 }
+.mondayinfoholder {
+    width: 50px;
+    flex-grow: 1;
+    display: none;
+}
+.peprallyinfoholder {
+    width: 50px;
+    flex-grow: 1;
+    display: none;
+}
+.specialinfoholder {
+    width: 50px;
+    flex-grow: 1;
+    display: none;
+}
+.homeroominfoholder {
+    width: 50px;
+    flex-grow: 1;
+    display: none;
+}
+.clubinfoholder {
+    width: 50px;
+    flex-grow: 1;
+    display: none;
+}
+/*End of the right side info holders*/
 
 
 
