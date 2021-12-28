@@ -36,16 +36,11 @@
     grid-gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     /*grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));*/
-    
-    
-    
-    
     /*grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;*/
     /*grid-template-areas: "regular monday peprally special homeroom club";*/
-
+    flex-grow: 1;
 }
-
 .cardformatter {
     padding: 3vw;
     border: 1px solid black;
@@ -53,7 +48,21 @@
     display: flex;
     justify-content: center;
 }
+.schedulebodyholder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.scheduleinfoholder {
+    width: 50px;
+    flex-grow: 1;
+}
 
+
+
+
+/*MEDIA QUERIES LAND*/
 @media only screen and (max-width: 1000px) {
 	.theschedulegrid {
         color: red;
