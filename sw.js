@@ -1,9 +1,23 @@
-self.addEventListener('install', (e) => {
-    console.log('The service worker is existing now, from sw.js');
-  });
+
+
+self.addEventListener('install', function(e) {
+  e.waitUntil(
+    caches.open('supremecacher').then(function(cache) {
+      return cache.addAll([
+        'https://projectpavanapp.github.io',
+        'https://projectpavanapp.github.io/index.html',
+        'https://projectpavanapp.github.io/app.js',
+        'https://projectpavanapp.github.io/favicon.ico',
+        'https://projectpavanapp.github.io/project002.webmanifest',
+        'https://projectpavanapp.github.io/style.css'
+      ]);
+    })
+  );
+ });
+ console.log('Cache is made and service worker installed');
 //This code will cache the app shell
   //Lists the files except the main mass image files to be cached
-  const cacheName = 'Project 002 Cache';
+  /*const cacheName = 'Project 002 Cache';
   const appShellFiles = [
         'https://projectpavanapp.github.io',
         'https://projectpavanapp.github.io/index.html',
@@ -12,9 +26,9 @@ self.addEventListener('install', (e) => {
         'https://projectpavanapp.github.io/project002.webmanifest',
         'https://projectpavanapp.github.io/style.css',
         //Now to cache the images
-        'https://projectpavanapp.github.io/img for the main/formula e.jpg',
-        'https://projectpavanapp.github.io/icons for web app/computer 16x16.png',
-  ];
+        //'https://projectpavanapp.github.io/img for the main/formula e.jpg',
+        //'https://projectpavanapp.github.io/icons for web app/computer 16x16.png',
+  ];*/
   /*Uh note: do not cache content.js file bc MDN said "You may notice we haven't cached game.js.
   This is the file that contains the data we use when displaying our games. In reality this 
   data would most likely come from an API endpoint or database and caching the data would 
@@ -22,7 +36,7 @@ self.addEventListener('install', (e) => {
   here, but the Periodic Background Sync API is good further reading on this topic."*/
   //https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Offline_Service_workers
   
-  console.log("appShellFiles array is made");
+  //console.log("appShellFiles array is made");
 
 /*Gets the main mass image files and puts them in an array, and combines that array
 with the one before this to create a thingy that will have all of the stuff to cache*/
@@ -32,7 +46,7 @@ with the one before this to create a thingy that will have all of the stuff to c
   }
   const contentToCache = appShellFiles;*/
 //.concat(contentImages)
-const contentToCache = appShellFiles;
+/*const contentToCache = appShellFiles;
 //Actually does the caching and takes list of stuff to cache and caches it
   self.addEventListener('install', (e) => {
     console.log('[Service Worker] Installed');
@@ -42,7 +56,7 @@ const contentToCache = appShellFiles;
       await cache.addAll(contentToCache);
       console.log("If I read this, then the service worker is reinstalled and stuff is cached");
     })());
-  });
+  });*/
   
   
   /*const appShellFiles = [

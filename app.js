@@ -43,10 +43,9 @@ console.log("The template has been generated");*/
 
 
 //NOW, for THE SERVICE WORKER!!!!!!!!
-console.log("Ready to register");
 if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("https://projectpavanapp.github.io/sw.js", {scope: 'https://projectpavanapp.github.io'});
-    console.log("Service worker is registered from app.js");
+    navigator.serviceWorker.register("https://projectpavanapp.github.io/sw.js");
+    console.log("Service worker is registered");
   }
 //after 40 mins I GOT IT YESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
 
@@ -74,7 +73,7 @@ function randomNotification() {
   }
   
   //Now to...progressively load these images and stuff
-  const imagesToLoad = document.querySelectorAll('img[data-src]');
+  /*const imagesToLoad = document.querySelectorAll('img[data-src]');
   const loadImages = (image) => {
     image.setAttribute('src', image.getAttribute('data-src'));
     image.onload = () => {
@@ -97,4 +96,4 @@ function randomNotification() {
     imagesToLoad.forEach((img) => {
       loadImages(img);
     });
-  }
+  }*/
