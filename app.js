@@ -48,30 +48,35 @@ if ("serviceWorker" in navigator) {
     console.log("Service worker is registered");
   }
 //after 40 mins I GOT IT YESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+//Not 40 mins but a whole lot of days
+
 
 //This asks for permission to send notification and...sends a notification function in the end
-const button = document.getElementById('notifications');
-button.addEventListener('click', () => {
-    Notification.requestPermission().then((result) => {
-        if (result === 'granted') {
-            randomNotification();
-        }
+if(document.getElementById('notifications') == true) {
+  console.log('one');
+
+    const button = document.getElementById('notifications');
+    button.addEventListener('click', () => {
+        Notification.requestPermission().then((result) => {
+            if (result === 'granted') {
+                randomNotification();
+            }
+        });
     });
-});
-//This thingy thingy thingifieriyer makes notification
-function randomNotification() {
-    const randomItem = Math.floor(Math.random() * content.length);
-    const notifTitle = content[randomItem].scheduletype;
-    const notifBody = `Created by ${content[randomItem].period1}.`;
-    //const notifImg = `data/img/${games[randomItem].slug}.jpg`;
-    const options = {
-      body: notifBody,
-      //icon: notifImg,
-    };
-    new Notification(notifTitle, options);
-    setTimeout(randomNotification, 30000);
-  }
-  
+    //This thingy thingy thingifieriyer makes notification
+    function randomNotification() {
+        const randomItem = Math.floor(Math.random() * content.length);
+        const notifTitle = content[randomItem].scheduletype;
+        const notifBody = `Created by ${content[randomItem].period1}.`;
+        //const notifImg = `data/img/${games[randomItem].slug}.jpg`;
+        const options = {
+          body: notifBody,
+          //icon: notifImg,
+        };
+        new Notification(notifTitle, options);
+        setTimeout(randomNotification, 30000);
+      }
+}
   //Now to...progressively load these images and stuff
   /*const imagesToLoad = document.querySelectorAll('img[data-src]');
   const loadImages = (image) => {
