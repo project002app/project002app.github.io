@@ -31,6 +31,10 @@ self.addEventListener('install', function(e) {
   );
 });
 
+//The code after this is not needed
+
+
+
 //This code will cache the app shell
   //Lists the files except the main mass image files to be cached
   /*const cacheName = 'Project 002 Cache';

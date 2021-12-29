@@ -1,4 +1,5 @@
-  var content = [
+//Well well well, I don't need this thing anymore
+var content = [
       {
         scheduletype: 'Regular',
         period1: 'aregular',

@@ -1,0 +1,42 @@
+{
+    "name": "Project 002 Schedule App",
+    "short_name": "Project 002",
+    "description": "A scheduling app for TBT students that provides access to all sorts of school schedules, calendars, and campus information",
+    "icons": [
+        {
+            "src": "/projectpavanapp.github.io/icons for web app/computer 512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "/projectpavanapp.github.io/icons for web app/computer 256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "/projectpavanapp.github.io/icons for web app/computer 128x128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "/projectpavanapp.github.io/icons for web app/computer 64x64.png",
+            "sizes": "64x64",
+            "type": "image/png"
+        },
+        {
+            "src": "/projectpavanapp.github.io/icons for web app/computer 32x32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "/projectpavanapp.github.io/icons for web app/computer 16x16.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        }
+        
+    ],
+    "start_url": "/projectpavanapp.github.io/index.html",
+    "display": "fullscreen",
+    "theme_color": "#B12A34",
+    "background_color": "#B12A34"
+}
