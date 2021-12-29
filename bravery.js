@@ -124,6 +124,17 @@ function clubfunction() {
     }
 }
 
+function bellscheduleminimizer() {
+    const schedulebody = document.querySelector('.bellscheduleholder');
+    const belltriangle = document.querySelector('.belldropdownimg');
+    if(schedulebody.style.display === "none"){
+        schedulebody.style.display = "block";
+        belltriangle.src = "downfacingtriangle.svg";
+    }else{
+        schedulebody.style.display = "none";
+        belltriangle.src = "rightfacingtriangle.svg";
+    }
+}
 
 
 
