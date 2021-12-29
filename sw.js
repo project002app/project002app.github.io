@@ -3,20 +3,34 @@
 self.addEventListener('install', function(e) {
   e.waitUntil(
     caches.open('supremecacher').then(function(cache) {
-      return cache.addAll([
-        'https://projectpavanapp.github.io',
+      return caches.addAll([
+        'https://projectpavanapp.github.io/oldindex.html',
         'https://projectpavanapp.github.io/index.html',
+        'https://projectpavanapp.github.io/schedules.html',
+        'https://projectpavanapp.github.io/calendars.html',
+        'https://projectpavanapp.github.io/homestyle.css',
+        'https://projectpavanapp.github.io/schedulestyle.css',
+        'https://projectpavanapp.github.io/calendarstyle.css',
         'https://projectpavanapp.github.io/app.js',
         'https://projectpavanapp.github.io/favicon.ico',
-        'https://projectpavanapp.github.io/project002.webmanifest',
-        'https://projectpavanapp.github.io/style.css'
-      ]).then(function() {
-        console.log("oh yes");
-      });
+        'https://projectpavanapp.github.io/project002.webmanifest'
+      ]);
     })
   );
  });
  console.log('Cache is made and service worker installed');
+
+
+ //Now to respond to network requests
+ self.addEventListener('fetch', function(e) {
+  console.log(e.request.url);
+  e.respondWith(
+    caches.match(e.request).then(function(response) {
+      return response || fetch(e.request);
+    })
+  );
+});
+
 //This code will cache the app shell
   //Lists the files except the main mass image files to be cached
   /*const cacheName = 'Project 002 Cache';
