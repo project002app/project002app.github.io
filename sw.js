@@ -22,7 +22,7 @@ self.addEventListener('install', (e) => {
   here, but the Periodic Background Sync API is good further reading on this topic."*/
   //https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Offline_Service_workers
   
-  console.log("appShellFiles cache is created and is made");
+  console.log("appShellFiles array is made");
 
 /*Gets the main mass image files and puts them in an array, and combines that array
 with the one before this to create a thingy that will have all of the stuff to cache*/
@@ -32,7 +32,7 @@ with the one before this to create a thingy that will have all of the stuff to c
   }
   const contentToCache = appShellFiles;*/
 //.concat(contentImages)
-
+const contentToCache = appShellFiles;
 //Actually does the caching and takes list of stuff to cache and caches it
   self.addEventListener('install', (e) => {
     console.log('[Service Worker] Installed');
@@ -40,7 +40,7 @@ with the one before this to create a thingy that will have all of the stuff to c
       const cache = await caches.open(cacheName);
       console.log('[Service Worker] Caching all: app shell and content');
       await cache.addAll(contentToCache);
-      console.log("If I read this, THEN I ACTUALLY DID IT YAYAYAYYAYAYAYYAYYYYY");
+      console.log("If I read this, then the service worker is reinstalled and stuff is cached");
     })());
   });
   
