@@ -23,9 +23,7 @@ const template = `<article>
   <li><span>Period 1:</span> <strong>PERIOD7</strong></li>
   <li><span>Period 1:</span> <strong>PERIOD8</strong></li>
   </ul>
-</article>
-
-<button onclick="supremefunctionofhope()">Ok so now this is part of my messed up sorta weird confusing plans, I hope this works.</button>`;
+</article>`;
 let stuff = '';
 for (let i = 0; i < content.length; i++) {
   let entry = template.replace(/POS/g, (i + 1))

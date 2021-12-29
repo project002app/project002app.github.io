@@ -26,11 +26,11 @@ self.addEventListener('install', (e) => {
 
 /*Gets the main mass image files and puts them in an array, and combines that array
 with the one before this to create a thingy that will have all of the stuff to cache*/
-  const specialholderofimage = [];
+  /*const specialholderofimage = [];
   for (let i = 0; i < content.length; i++) {
     specialholderofimage.push(`data/contentimages/${content[i].imageholder}.png`);
   }
-  const contentToCache = appShellFiles;
+  const contentToCache = appShellFiles;*/
 //.concat(contentImages)
 
 //Actually does the caching and takes list of stuff to cache and caches it
