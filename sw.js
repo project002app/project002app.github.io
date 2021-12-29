@@ -2,8 +2,8 @@
 
 self.addEventListener('install', function(e) {
   e.waitUntil(
-    caches.open('supremecacher').then(function() {
-      return cache.addAll([
+    caches.open('supremecacher').then(function(something) {
+      return something.addAll([
         'https://projectpavanapp.github.io/oldindex.html',
         'https://projectpavanapp.github.io/index.html',
         'https://projectpavanapp.github.io/schedules.html',
