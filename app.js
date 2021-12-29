@@ -7,9 +7,7 @@
 
 
 //Yeah forget this stuff I'm just gonna let the html take its time to load, then use the service worker to cache stuff
-
-
-const template = `<article>
+/*const template = `<article>
   <img src='data/contentimages/placeholder.png' data-src='data/contentimages/IMGHOLDER.png' alt='SCHEDULETYPE'>
   <h3>#POS. NAME</h3>
   <ul>
@@ -41,7 +39,7 @@ for (let i = 0; i < content.length; i++) {
   stuff += entry;
 }
 document.getElementById('stuff').innerHTML = stuff;
-console.log("The template has been generated");
+console.log("The template has been generated");*/
 
 
 //NOW, for THE SERVICE WORKER!!!!!!!!
