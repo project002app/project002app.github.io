@@ -47,7 +47,7 @@
     margin: 1vw;
     display: flex;
     justify-content: center;
-    font-size: 35px;
+    font-size: 20px;
 }
 .cardformatter:hover {
     cursor: pointer;
@@ -95,7 +95,7 @@ th {
     text-decoration: none;
     cursor: pointer;
 }
-
+/*Bell Schedules*/
 .bellbuttonholder {
     display: flex;
     justify-content: space-around;
@@ -115,6 +115,34 @@ th {
 .belldropdownimg {
     width: 30px;
 }
+
+/*Sport Schedules*/
+
+.sportbuttonholder {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 1.5vw;
+    margin-right: 3vw;
+}
+.sportbuttonholder:hover {
+    cursor: pointer;
+}
+.sportdropdownpformat {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-right: 15px;
+    padding-left: 5px;
+}
+.sportdropdownimg {
+    width: 30px;
+}
+/*.sportscheduleholder {
+    Note: Do not use or delete this class,
+    a JS function needs it
+}*/
+/*Special Schedules*/
+
 /*.bellscheduleholder {
     Note: Do not use or delete this class,
     a JS function needs it
@@ -123,6 +151,62 @@ th {
 
 
 /*The right side info holders*/
+.sport1infoholder {
+    flex-grow: 0.3;
+    display: none;
+    border: 0.1px solid black;
+    margin-right: 15px;
+    padding: 15px;
+}
+.sport2infoholder {
+    flex-grow: 0.3;
+    display: none;
+    border: 0.1px solid black;
+    margin-right: 15px;
+    padding: 15px;
+}
+.sport3infoholder {
+    flex-grow: 0.3;
+    display: none;
+    border: 0.1px solid black;
+    margin-right: 15px;
+    padding: 15px;
+}
+.sport4infoholder {
+    flex-grow: 0.3;
+    display: none;
+    border: 0.1px solid black;
+    margin-right: 15px;
+    padding: 15px;
+}
+.sport5infoholder {
+    flex-grow: 0.3;
+    display: none;
+    border: 0.1px solid black;
+    margin-right: 15px;
+    padding: 15px;
+}
+.sport6infoholder {
+    flex-grow: 0.3;
+    display: none;
+    border: 0.1px solid black;
+    margin-right: 15px;
+    padding: 15px;
+}
+.sport7infoholder {
+    flex-grow: 0.3;
+    display: none;
+    border: 0.1px solid black;
+    margin-right: 15px;
+    padding: 15px;
+}
+.sport1infoholder {
+    flex-grow: 0.3;
+    display: none;
+    border: 0.1px solid black;
+    margin-right: 15px;
+    padding: 15px;
+}
 .regularinfoholder {
     flex-grow: 0.3;
     display: none;

@@ -28,6 +28,7 @@ function regularfunction() {
         
     }
 }
+
 function mondayfunction() {
     const monday = document.querySelector('.mondayinfoholder');
     if(monday.style.display === "block"){
@@ -124,6 +125,67 @@ function clubfunction() {
     }
 }
 
+function sport1() {
+    const firstsport = document.querySelector('.sport1infoholder');
+    if(firstsport.style.display === "block"){
+        firstsport.style.display = "none";
+        document.querySelector('.sport2infoholder').style.display = "none";
+        document.querySelector('.sport3infoholder').style.display = "none";
+        document.querySelector('.sport4infoholder').style.display = "none";
+        document.querySelector('.sport5infoholder').style.display = "none";
+        document.querySelector('.sport6infoholder').style.display = "none";
+        document.querySelector('.sport7infoholder').style.display = "none";
+    }else{
+        document.querySelector('.sport2infoholder').style.display = "none";
+        document.querySelector('.sport3infoholder').style.display = "none";
+        document.querySelector('.sport4infoholder').style.display = "none";
+        document.querySelector('.sport5infoholder').style.display = "none";
+        document.querySelector('.sport6infoholder').style.display = "none";
+        document.querySelector('.sport7infoholder').style.display = "none";
+        firstsport.style.display = "block";
+    }
+}
+function sport2() {
+    const secondsport = document.querySelector('.sport2infoholder');
+    if(secondsport.style.display === "block"){
+        secondsport.style.display = "none";
+        document.querySelector('.sport1infoholder').style.display = "none";
+        document.querySelector('.sport3infoholder').style.display = "none";
+        document.querySelector('.sport4infoholder').style.display = "none";
+        document.querySelector('.sport5infoholder').style.display = "none";
+        document.querySelector('.sport6infoholder').style.display = "none";
+        document.querySelector('.sport7infoholder').style.display = "none";
+    }else{
+        document.querySelector('.sport1infoholder').style.display = "none";
+        document.querySelector('.sport3infoholder').style.display = "none";
+        document.querySelector('.sport4infoholder').style.display = "none";
+        document.querySelector('.sport5infoholder').style.display = "none";
+        document.querySelector('.sport6infoholder').style.display = "none";
+        document.querySelector('.sport7infoholder').style.display = "none";
+        secondsport.style.display = "block";
+    }
+}
+function sport2() {
+    const secondsport = document.querySelector('.sport2infoholder');
+    if(secondsport.style.display === "block"){
+        secondsport.style.display = "none";
+        document.querySelector('.sport1infoholder').style.display = "none";
+        document.querySelector('.sport3infoholder').style.display = "none";
+        document.querySelector('.sport4infoholder').style.display = "none";
+        document.querySelector('.sport5infoholder').style.display = "none";
+        document.querySelector('.sport6infoholder').style.display = "none";
+        document.querySelector('.sport7infoholder').style.display = "none";
+    }else{
+        document.querySelector('.sport1infoholder').style.display = "none";
+        document.querySelector('.sport3infoholder').style.display = "none";
+        document.querySelector('.sport4infoholder').style.display = "none";
+        document.querySelector('.sport5infoholder').style.display = "none";
+        document.querySelector('.sport6infoholder').style.display = "none";
+        document.querySelector('.sport7infoholder').style.display = "none";
+        secondsport.style.display = "block";
+    }
+}
+
 function bellscheduleminimizer() {
     const schedulebody = document.querySelector('.bellscheduleholder');
     const belltriangle = document.querySelector('.belldropdownimg');
@@ -135,7 +197,17 @@ function bellscheduleminimizer() {
         belltriangle.src = "rightfacingtriangle.svg";
     }
 }
-
+function sportscheduleminimizer() {
+    const schedulebody = document.querySelector('.sportscheduleholder');
+    const belltriangle = document.querySelector('.sportdropdownimg');
+    if(schedulebody.style.display === "none"){
+        schedulebody.style.display = "block";
+        belltriangle.src = "downfacingtriangle.svg";
+    }else{
+        schedulebody.style.display = "none";
+        belltriangle.src = "rightfacingtriangle.svg";
+    }
+}
 
 
 //End of the right side info holders
