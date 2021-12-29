@@ -185,6 +185,248 @@ function sport2() {
         secondsport.style.display = "block";
     }
 }
+function sport3() {
+    const thirdsport = document.querySelector('.sport3infoholder');
+    if(thirdsport.style.display === "block"){
+        thirdsport.style.display = "none";
+        document.querySelector('.sport1infoholder').style.display = "none";
+        document.querySelector('.sport2infoholder').style.display = "none";
+        document.querySelector('.sport4infoholder').style.display = "none";
+        document.querySelector('.sport5infoholder').style.display = "none";
+        document.querySelector('.sport6infoholder').style.display = "none";
+        document.querySelector('.sport7infoholder').style.display = "none";
+    }else{
+        document.querySelector('.sport1infoholder').style.display = "none";
+        document.querySelector('.sport2infoholder').style.display = "none";
+        document.querySelector('.sport4infoholder').style.display = "none";
+        document.querySelector('.sport5infoholder').style.display = "none";
+        document.querySelector('.sport6infoholder').style.display = "none";
+        document.querySelector('.sport7infoholder').style.display = "none";
+        thirdsport.style.display = "block";
+    }
+}
+function sport4() {
+    const fourthsport = document.querySelector('.sport4infoholder');
+    if(fourthsport.style.display === "block"){
+        fourthsport.style.display = "none";
+        document.querySelector('.sport1infoholder').style.display = "none";
+        document.querySelector('.sport2infoholder').style.display = "none";
+        document.querySelector('.sport3infoholder').style.display = "none";
+        document.querySelector('.sport5infoholder').style.display = "none";
+        document.querySelector('.sport6infoholder').style.display = "none";
+        document.querySelector('.sport7infoholder').style.display = "none";
+    }else{
+        document.querySelector('.sport1infoholder').style.display = "none";
+        document.querySelector('.sport2infoholder').style.display = "none";
+        document.querySelector('.sport3infoholder').style.display = "none";
+        document.querySelector('.sport5infoholder').style.display = "none";
+        document.querySelector('.sport6infoholder').style.display = "none";
+        document.querySelector('.sport7infoholder').style.display = "none";
+        fourthsport.style.display = "block";
+    }
+}
+function sport5() {
+    const fifthsport = document.querySelector('.sport5infoholder');
+    if(fifthsport.style.display === "block"){
+        fifthsport.style.display = "none";
+        document.querySelector('.sport1infoholder').style.display = "none";
+        document.querySelector('.sport2infoholder').style.display = "none";
+        document.querySelector('.sport3infoholder').style.display = "none";
+        document.querySelector('.sport4infoholder').style.display = "none";
+        document.querySelector('.sport6infoholder').style.display = "none";
+        document.querySelector('.sport7infoholder').style.display = "none";
+    }else{
+        document.querySelector('.sport1infoholder').style.display = "none";
+        document.querySelector('.sport2infoholder').style.display = "none";
+        document.querySelector('.sport3infoholder').style.display = "none";
+        document.querySelector('.sport4infoholder').style.display = "none";
+        document.querySelector('.sport6infoholder').style.display = "none";
+        document.querySelector('.sport7infoholder').style.display = "none";
+        fifthsport.style.display = "block";
+    }
+}
+function sport6() {
+    const sixthsport = document.querySelector('.sport6infoholder');
+    if(sixthsport.style.display === "block"){
+        sixthsport.style.display = "none";
+        document.querySelector('.sport1infoholder').style.display = "none";
+        document.querySelector('.sport2infoholder').style.display = "none";
+        document.querySelector('.sport3infoholder').style.display = "none";
+        document.querySelector('.sport4infoholder').style.display = "none";
+        document.querySelector('.sport5infoholder').style.display = "none";
+        document.querySelector('.sport7infoholder').style.display = "none";
+    }else{
+        document.querySelector('.sport1infoholder').style.display = "none";
+        document.querySelector('.sport2infoholder').style.display = "none";
+        document.querySelector('.sport3infoholder').style.display = "none";
+        document.querySelector('.sport4infoholder').style.display = "none";
+        document.querySelector('.sport5infoholder').style.display = "none";
+        document.querySelector('.sport7infoholder').style.display = "none";
+        sixthsport.style.display = "block";
+    }
+}
+function sport7() {
+    const seventhsport = document.querySelector('.sport7infoholder');
+    if(seventhsport.style.display === "block"){
+        seventhsport.style.display = "none";
+        document.querySelector('.sport1infoholder').style.display = "none";
+        document.querySelector('.sport2infoholder').style.display = "none";
+        document.querySelector('.sport3infoholder').style.display = "none";
+        document.querySelector('.sport4infoholder').style.display = "none";
+        document.querySelector('.sport5infoholder').style.display = "none";
+        document.querySelector('.sport6infoholder').style.display = "none";
+    }else{
+        document.querySelector('.sport1infoholder').style.display = "none";
+        document.querySelector('.sport2infoholder').style.display = "none";
+        document.querySelector('.sport3infoholder').style.display = "none";
+        document.querySelector('.sport4infoholder').style.display = "none";
+        document.querySelector('.sport5infoholder').style.display = "none";
+        document.querySelector('.sport6infoholder').style.display = "none";
+        seventhsport.style.display = "block";
+    }
+}
+function special1() {
+    const spec1 = document.querySelector('.special1infoholder');
+    if(spec1.style.display === "block"){
+        spec1.style.display = "none";
+        document.querySelector('.special2infoholder').style.display = "none";
+        document.querySelector('.special3infoholder').style.display = "none";
+        document.querySelector('.special4infoholder').style.display = "none";
+        document.querySelector('.special5infoholder').style.display = "none";
+        document.querySelector('.special6infoholder').style.display = "none";
+        document.querySelector('.special7infoholder').style.display = "none";
+    }else{
+        document.querySelector('.special2infoholder').style.display = "none";
+        document.querySelector('.special3infoholder').style.display = "none";
+        document.querySelector('.special4infoholder').style.display = "none";
+        document.querySelector('.special5infoholder').style.display = "none";
+        document.querySelector('.special6infoholder').style.display = "none";
+        document.querySelector('.special7infoholder').style.display = "none";
+        spec1.style.display = "block";
+    }
+}
+function special2() {
+    const spec2 = document.querySelector('.special2infoholder');
+    if(spec2.style.display === "block"){
+        spec2.style.display = "none";
+        document.querySelector('.special1infoholder').style.display = "none";
+        document.querySelector('.special3infoholder').style.display = "none";
+        document.querySelector('.special4infoholder').style.display = "none";
+        document.querySelector('.special5infoholder').style.display = "none";
+        document.querySelector('.special6infoholder').style.display = "none";
+        document.querySelector('.special7infoholder').style.display = "none";
+    }else{
+        document.querySelector('.special1infoholder').style.display = "none";
+        document.querySelector('.special3infoholder').style.display = "none";
+        document.querySelector('.special4infoholder').style.display = "none";
+        document.querySelector('.special5infoholder').style.display = "none";
+        document.querySelector('.special6infoholder').style.display = "none";
+        document.querySelector('.special7infoholder').style.display = "none";
+        spec2.style.display = "block";
+    }
+}
+function special3() {
+    const spec3 = document.querySelector('.special3infoholder');
+    if(spec3.style.display === "block"){
+        spec3.style.display = "none";
+        document.querySelector('.special1infoholder').style.display = "none";
+        document.querySelector('.special2infoholder').style.display = "none";
+        document.querySelector('.special4infoholder').style.display = "none";
+        document.querySelector('.special5infoholder').style.display = "none";
+        document.querySelector('.special6infoholder').style.display = "none";
+        document.querySelector('.special7infoholder').style.display = "none";
+    }else{
+        document.querySelector('.special1infoholder').style.display = "none";
+        document.querySelector('.special2infoholder').style.display = "none";
+        document.querySelector('.special4infoholder').style.display = "none";
+        document.querySelector('.special5infoholder').style.display = "none";
+        document.querySelector('.special6infoholder').style.display = "none";
+        document.querySelector('.special7infoholder').style.display = "none";
+        spec3.style.display = "block";
+    }
+}
+function special4() {
+    const spec4 = document.querySelector('.special4infoholder');
+    if(spec4.style.display === "block"){
+        spec4.style.display = "none";
+        document.querySelector('.special1infoholder').style.display = "none";
+        document.querySelector('.special2infoholder').style.display = "none";
+        document.querySelector('.special3infoholder').style.display = "none";
+        document.querySelector('.special5infoholder').style.display = "none";
+        document.querySelector('.special6infoholder').style.display = "none";
+        document.querySelector('.special7infoholder').style.display = "none";
+    }else{
+        document.querySelector('.special1infoholder').style.display = "none";
+        document.querySelector('.special2infoholder').style.display = "none";
+        document.querySelector('.special3infoholder').style.display = "none";
+        document.querySelector('.special5infoholder').style.display = "none";
+        document.querySelector('.special6infoholder').style.display = "none";
+        document.querySelector('.special7infoholder').style.display = "none";
+        spec4.style.display = "block";
+    }
+}
+function special5() {
+    const spec5 = document.querySelector('.special5infoholder');
+    if(spec5.style.display === "block"){
+        spec5.style.display = "none";
+        document.querySelector('.special1infoholder').style.display = "none";
+        document.querySelector('.special2infoholder').style.display = "none";
+        document.querySelector('.special3infoholder').style.display = "none";
+        document.querySelector('.special4infoholder').style.display = "none";
+        document.querySelector('.special6infoholder').style.display = "none";
+        document.querySelector('.special7infoholder').style.display = "none";
+    }else{
+        document.querySelector('.special1infoholder').style.display = "none";
+        document.querySelector('.special2infoholder').style.display = "none";
+        document.querySelector('.special3infoholder').style.display = "none";
+        document.querySelector('.special4infoholder').style.display = "none";
+        document.querySelector('.special6infoholder').style.display = "none";
+        document.querySelector('.special7infoholder').style.display = "none";
+        spec5.style.display = "block";
+    }
+}
+function special6() {
+    const spec6 = document.querySelector('.special6infoholder');
+    if(spec6.style.display === "block"){
+        spec6.style.display = "none";
+        document.querySelector('.special1infoholder').style.display = "none";
+        document.querySelector('.special2infoholder').style.display = "none";
+        document.querySelector('.special3infoholder').style.display = "none";
+        document.querySelector('.special4infoholder').style.display = "none";
+        document.querySelector('.special5infoholder').style.display = "none";
+        document.querySelector('.special7infoholder').style.display = "none";
+    }else{
+        document.querySelector('.special1infoholder').style.display = "none";
+        document.querySelector('.special2infoholder').style.display = "none";
+        document.querySelector('.special3infoholder').style.display = "none";
+        document.querySelector('.special4infoholder').style.display = "none";
+        document.querySelector('.special5infoholder').style.display = "none";
+        document.querySelector('.special7infoholder').style.display = "none";
+        spec6.style.display = "block";
+    }
+}
+function special7() {
+    const spec7 = document.querySelector('.special7infoholder');
+    if(spec7.style.display === "block"){
+        spec7.style.display = "none";
+        document.querySelector('.special1infoholder').style.display = "none";
+        document.querySelector('.special2infoholder').style.display = "none";
+        document.querySelector('.special3infoholder').style.display = "none";
+        document.querySelector('.special4infoholder').style.display = "none";
+        document.querySelector('.special5infoholder').style.display = "none";
+        document.querySelector('.special6infoholder').style.display = "none";
+    }else{
+        document.querySelector('.special1infoholder').style.display = "none";
+        document.querySelector('.special2infoholder').style.display = "none";
+        document.querySelector('.special3infoholder').style.display = "none";
+        document.querySelector('.special4infoholder').style.display = "none";
+        document.querySelector('.special5infoholder').style.display = "none";
+        document.querySelector('.special6infoholder').style.display = "none";
+        spec7.style.display = "block";
+    }
+}
+
+
 
 function bellscheduleminimizer() {
     const schedulebody = document.querySelector('.bellscheduleholder');
@@ -208,6 +450,16 @@ function sportscheduleminimizer() {
         belltriangle.src = "rightfacingtriangle.svg";
     }
 }
+function specialscheduleminimizer() {
+    const schedulebody = document.querySelector('.specialscheduleholder');
+    const belltriangle = document.querySelector('.specialdropdownimg');
+    if(schedulebody.style.display === "none"){
+        schedulebody.style.display = "block";
+        belltriangle.src = "downfacingtriangle.svg";
+    }else{
+        schedulebody.style.display = "none";
+        belltriangle.src = "rightfacingtriangle.svg";
+    }
+}
 
 
-//End of the right side info holders

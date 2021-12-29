@@ -101,7 +101,7 @@ th {
     justify-content: space-around;
     align-items: center;
     margin-left: 1.5vw;
-    margin-right: 3vw;
+    margin-right: 1vw;
 }
 .bellbuttonholder:hover {
     cursor: pointer;
@@ -123,7 +123,7 @@ th {
     justify-content: space-around;
     align-items: center;
     margin-left: 1.5vw;
-    margin-right: 3vw;
+    margin-right: 1vw;
 }
 .sportbuttonholder:hover {
     cursor: pointer;
@@ -141,16 +141,91 @@ th {
     Note: Do not use or delete this class,
     a JS function needs it
 }*/
-/*Special Schedules*/
+
 
 /*.bellscheduleholder {
     Note: Do not use or delete this class,
     a JS function needs it
 }*/
+/*.specialscheduleholder {
+    Note: Do not use or delete this class,
+    a JS function needs it
+}*/
+
+/*Special Schedules*/
+.specialbuttonholder {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 1.5vw;
+    margin-right: 1vw;
+}
+.specialbuttonholder:hover {
+    cursor: pointer;
+}
+.specialdropdownimg {
+    width: 30px;
+}
+.specialdropdownpformat {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-right: 15px;
+    padding-left: 5px;
+}
 
 
 
 /*The right side info holders*/
+.special1infoholder {
+    flex-grow: 0.3;
+    display: none;
+    border: 0.1px solid black;
+    margin-right: 15px;
+    padding: 15px;
+}
+.special2infoholder {
+    flex-grow: 0.3;
+    display: none;
+    border: 0.1px solid black;
+    margin-right: 15px;
+    padding: 15px;
+}
+.special3infoholder {
+    flex-grow: 0.3;
+    display: none;
+    border: 0.1px solid black;
+    margin-right: 15px;
+    padding: 15px;
+}
+.special4infoholder {
+    flex-grow: 0.3;
+    display: none;
+    border: 0.1px solid black;
+    margin-right: 15px;
+    padding: 15px;
+}
+.special5infoholder {
+    flex-grow: 0.3;
+    display: none;
+    border: 0.1px solid black;
+    margin-right: 15px;
+    padding: 15px;
+}
+.special6infoholder {
+    flex-grow: 0.3;
+    display: none;
+    border: 0.1px solid black;
+    margin-right: 15px;
+    padding: 15px;
+}
+.special7infoholder {
+    flex-grow: 0.3;
+    display: none;
+    border: 0.1px solid black;
+    margin-right: 15px;
+    padding: 15px;
+}
+
 .sport1infoholder {
     flex-grow: 0.3;
     display: none;
