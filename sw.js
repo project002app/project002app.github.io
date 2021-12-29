@@ -10,7 +10,9 @@ self.addEventListener('install', function(e) {
         'https://projectpavanapp.github.io/favicon.ico',
         'https://projectpavanapp.github.io/project002.webmanifest',
         'https://projectpavanapp.github.io/style.css'
-      ]);
+      ]).then(function() {
+        console.log("oh yes");
+      });
     })
   );
  });
