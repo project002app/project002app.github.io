@@ -442,23 +442,23 @@ function bellscheduleminimizer() {
 function sportscheduleminimizer() {
     const schedulebody = document.querySelector('.sportscheduleholder');
     const belltriangle = document.querySelector('.sportdropdownimg');
-    if(schedulebody.style.display === "none"){
-        schedulebody.style.display = "block";
-        belltriangle.src = "downfacingtriangle.svg";
-    }else{
+    if(schedulebody.style.display === "block"){
         schedulebody.style.display = "none";
         belltriangle.src = "rightfacingtriangle.svg";
+    }else{
+        schedulebody.style.display = "block";
+        belltriangle.src = "downfacingtriangle.svg";
     }
 }
 function specialscheduleminimizer() {
     const schedulebody = document.querySelector('.specialscheduleholder');
     const belltriangle = document.querySelector('.specialdropdownimg');
-    if(schedulebody.style.display === "none"){
-        schedulebody.style.display = "block";
-        belltriangle.src = "downfacingtriangle.svg";
-    }else{
+    if(schedulebody.style.display === "block"){
         schedulebody.style.display = "none";
         belltriangle.src = "rightfacingtriangle.svg";
+    }else{
+        schedulebody.style.display = "block";
+        belltriangle.src = "downfacingtriangle.svg";
     }
 }
 
