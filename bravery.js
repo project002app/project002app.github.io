@@ -1,7 +1,24 @@
 console.log("hello from the land of the code");
+const app = new Realm.App({ id: "application-0-drrgt" });
 function supremefunctionofhope() {
     console.log("I am Dr. Frankenstein");
 }
+
+//Realm Stuff
+// Create an anonymous credential
+const credentials = Realm.Credentials.anonymous();
+try {
+  // Authenticate the user
+  const user = await app.logIn(credentials);
+  // `App.currentUser` updates to match the logged in user
+  assert(user.id === app.currentUser.id)
+  return user
+} catch(err) {
+  console.error("Failed to log in", err);
+}
+
+
+
 //Start of the right side info holders
 //const regular = document.querySelector('.regularinfoholder');
 function regularfunction() {
