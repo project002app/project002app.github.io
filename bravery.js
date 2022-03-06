@@ -5,7 +5,7 @@ function supremefunctionofhope() {
 //This is not going to work
 
 
-import React from "react";
+//import React from "react";
 import "./styles.css";
 
 // Import the MongoDB Realm Web SDK
@@ -36,7 +36,7 @@ function Login({ setUser }) {
 const App = () => {
   // Keep the logged in Realm user in local state. This lets the app re-render
   // whenever the current user changes (e.g. logs in or logs out).
-  const [user, setUser] = React.useState(app.currentUser);
+  //const [user, setUser] = React.useState(app.currentUser);
 
   // If a user is logged in, show their details.
   // Otherwise, show the login screen.
