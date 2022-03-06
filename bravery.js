@@ -1,9 +1,3 @@
-console.log("hello from the land of the code");
-
-const app = new Realm.App({ id: "application-0-drrgt" });
-function supremefunctionofhope() {
-    console.log("I am Dr. Frankenstein");
-}
 
 
 
