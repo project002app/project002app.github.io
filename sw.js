@@ -6,6 +6,7 @@ self.addEventListener('install', function(e) {
       return something.addAll([
         'https://project002app.github.io/oldindex.html',
         'https://project002app.github.io/index.html',
+<<<<<<< HEAD
         'https://project002app.github.io/schedules.html',
         'https://project002app.github.io/calendars.html',
         'https://project002app.github.io/homestyle.css',
@@ -14,6 +15,18 @@ self.addEventListener('install', function(e) {
         'https://project002app.github.io/app.js',
         'https://project002app.github.io/favicon.ico',
         'https://project002app.github.io/project002.webmanifest'
+=======
+        //'https://project002app.github.io/schedules.html',
+        'https://project002app.github.io/calendars.html',
+        'https://project002app.github.io/homestyle.css',
+        'https://project002app.github.io/indexstyle.css',
+        'https://project002app.github.io/calendarstyle.css',
+        'https://project002app.github.io/app.js',
+        'https://project002app.github.io/favicon.ico',
+        'https://project002app.github.io/project002.webmanifest',
+        'https://project002app.github.io/oldoldindex.html',
+        'https://project002app.github.io/apush.html'
+>>>>>>> ea86d70e1fea8541af0bb726b4a9cfc3724943fd
       ]);
     })
   );
