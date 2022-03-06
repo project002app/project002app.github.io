@@ -1,3 +1,6 @@
+function supremefunctionofhope() {
+    console.log("I am Dr. Frankenstein");
+}
 
 
 
