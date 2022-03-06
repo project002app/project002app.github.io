@@ -1,6 +1,5 @@
-    /*And now, we begin at the beginning*/
-/*Calendars header*/
-.headerbuttonsholder {
+/*Schedules header*/
+/*.headerbuttonsholder {
     display: flex;
     justify-content: flex-end;
 }
@@ -21,19 +20,16 @@
     margin-top: 3vh;
     margin-bottom: 0px;
     margin-left: 12vw;
+}*/
+.navformatter {
+    display: flex;
+    justify-content: center;
 }
-
-/*Calendars body*/
-
-/*MEDIA QUERIES LAND*/
-@media only screen and (max-width: 1000px) {
-	.theschedulegrid {
-        color: red;
-        font-size: 30px;
-    }
-    .headerbuttonsmodifier {
-        font-size: 30px;
-        padding-left: 5vw;
-        padding-right: 5vw;
-    }
+.navlinkformatter {
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+}
+.navlinkformatter:hover {
+    color: red;
 }

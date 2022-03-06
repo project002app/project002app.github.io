@@ -1,0 +1,7 @@
+.mainflex {
+    display: flex;
+    flex-direction: column;
+}
+.flex1 {
+    display: flex;
+}

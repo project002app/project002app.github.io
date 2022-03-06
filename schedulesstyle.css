@@ -2,41 +2,7 @@
     color: red;
 }
 /*And now, we begin at the beginning*/
-/*Schedules header*/
-/*.headerbuttonsholder {
-    display: flex;
-    justify-content: flex-end;
-}
-.headerbuttonsmodifier {
-    padding-left: 0.5vw;
-    padding-right: 0.5vw;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    text-decoration: none;
-    color: black;
-    font-size: 24px;
-}
-.headerbuttonsmodifier:hover {
-    color: red;
-}
 
-.headertopthingoid {
-    margin-top: 3vh;
-    margin-bottom: 0px;
-    margin-left: 12vw;
-}*/
-.navformatter {
-    display: flex;
-    justify-content: center;
-}
-.navlinkformatter {
-    color: black;
-    text-decoration: none;
-    font-size: 2rem;
-}
-.navlinkformatter:hover {
-    color: red;
-}
 
 
 
@@ -47,7 +13,7 @@
 .theschedulegrid {
     display: grid;
     grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 0.3fr));
     /*grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));*/
     /*grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;*/

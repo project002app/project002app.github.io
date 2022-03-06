@@ -1,7 +1,13 @@
 console.log("hello from the land of the code");
+
 function supremefunctionofhope() {
     console.log("I am Dr. Frankenstein");
 }
+
+
+
+
+
 //Start of the right side info holders
 //const regular = document.querySelector('.regularinfoholder');
 function regularfunction() {
