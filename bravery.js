@@ -2,60 +2,6 @@ function supremefunctionofhope() {
     console.log("I am Dr. Frankenstein");
 }
 
-//This is not going to work
-
-
-//import React from "react";
-//import "./styles.css";
-
-// Import the MongoDB Realm Web SDK
-//import * as Realm from "realm-web";
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //Start of the right side info holders
 //const regular = document.querySelector('.regularinfoholder');
