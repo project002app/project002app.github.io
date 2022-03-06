@@ -11,7 +11,7 @@ function UserDetail({ user }) {
     /*<div>
       <h1>Logged in with anonymous id: {user.id}</h1>
     </div>*/
-    console.log("Uhh its finished?");
+    console.log("Uhh its finished?")
   );
 }
 
