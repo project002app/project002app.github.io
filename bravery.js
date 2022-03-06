@@ -21,6 +21,7 @@ function UserDetail({ user }) {
     <div>
       <h1>Logged in with anonymous id: {user.id}</h1>
     </div>
+    //Note: fix this
   );
 }
 
@@ -41,11 +42,12 @@ const App = () => {
   // If a user is logged in, show their details.
   // Otherwise, show the login screen.
   return (
-    <div className="App">
+    /*<div className="App">
       <div className="App-header">
         {user ? <UserDetail user={user} /> : <Login setUser={setUser} />}
       </div>
-    </div>
+    </div>*/
+    console.log("Uhh finished???")
   );
 };
 
