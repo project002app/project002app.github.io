@@ -8,10 +8,10 @@ const app = new Realm.App({ id: REALM_APP_ID });
 // Create a component that displays the given user's details
 function UserDetail({ user }) {
   return (
-    <div>
+    /*<div>
       <h1>Logged in with anonymous id: {user.id}</h1>
-    </div>
-    //Note: fix this
+    </div>*/
+    console.log("Uhh its finished?");
   );
 }
 
