@@ -6,10 +6,10 @@ function supremefunctionofhope() {
 
 
 //import React from "react";
-import "./styles.css";
+//import "./styles.css";
 
 // Import the MongoDB Realm Web SDK
-import * as Realm from "realm-web";
+//import * as Realm from "realm-web";
 
 // Connect to your MongoDB Realm app
 const REALM_APP_ID = "application-0-drrgt"; // e.g. myapp-abcde
