@@ -3,8 +3,6 @@
 //https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset
 //https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*
 
-
-
 //Yeah forget this stuff I'm just gonna let the html take its time to load, then use the service worker to cache stuff
 /*const template = `<article>
   <img src='data/contentimages/placeholder.png' data-src='data/contentimages/IMGHOLDER.png' alt='SCHEDULETYPE'>
@@ -40,44 +38,42 @@ for (let i = 0; i < content.length; i++) {
 document.getElementById('stuff').innerHTML = stuff;
 console.log("The template has been generated");*/
 
-
 //NOW, for THE SERVICE WORKER!!!!!!!!
 if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("https://project002app.github.io/sw.js");
-    console.log("Service worker is registered");
-  }
+	navigator.serviceWorker.register("https://project002app.github.io/sw.js");
+	console.log("Service worker is registered");
+}
 //after 40 mins I GOT IT YESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
 //Not 40 mins but a whole lot of days
 
-
 //This asks for permission to send notification and...sends a notification function in the end
-if(document.getElementById('notifications') == true) {
-  console.log('one');
+if (document.getElementById("notifications") == true) {
+	console.log("one");
 
-    const button = document.getElementById('notifications');
-    button.addEventListener('click', () => {
-        Notification.requestPermission().then((result) => {
-            if (result === 'granted') {
-                randomNotification();
-            }
-        });
-    });
-    //This thingy thingy thingifieriyer makes notification
-    function randomNotification() {
-        const randomItem = Math.floor(Math.random() * content.length);
-        const notifTitle = content[randomItem].scheduletype;
-        const notifBody = `Created by ${content[randomItem].period1}.`;
-        //const notifImg = `data/img/${games[randomItem].slug}.jpg`;
-        const options = {
-          body: notifBody,
-          //icon: notifImg,
-        };
-        new Notification(notifTitle, options);
-        setTimeout(randomNotification, 30000);
-      }
+	const button = document.getElementById("notifications");
+	button.addEventListener("click", () => {
+		Notification.requestPermission().then((result) => {
+			if (result === "granted") {
+				randomNotification();
+			}
+		});
+	});
+	//This thingy thingy thingifieriyer makes notification
+	function randomNotification() {
+		const randomItem = Math.floor(Math.random() * content.length);
+		const notifTitle = content[randomItem].scheduletype;
+		const notifBody = `Created by ${content[randomItem].period1}.`;
+		//const notifImg = `data/img/${games[randomItem].slug}.jpg`;
+		const options = {
+			body: notifBody,
+			//icon: notifImg,
+		};
+		new Notification(notifTitle, options);
+		setTimeout(randomNotification, 30000);
+	}
 }
-  //Now to...progressively load these images and stuff
-  /*const imagesToLoad = document.querySelectorAll('img[data-src]');
+//Now to...progressively load these images and stuff
+/*const imagesToLoad = document.querySelectorAll('img[data-src]');
   const loadImages = (image) => {
     image.setAttribute('src', image.getAttribute('data-src'));
     image.onload = () => {

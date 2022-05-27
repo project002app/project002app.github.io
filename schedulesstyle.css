@@ -1,325 +1,314 @@
 .experimental {
-    color: red;
+	color: red;
 }
 /*And now, we begin at the beginning*/
 
-
-
-
-
 /*Schedules main body*/
 
-
 .theschedulegrid {
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 0.3fr));
-    /*grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));*/
-    /*grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: repeat(auto-fit, minmax(30rem, 0.3fr));
+	/*grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));*/
+	/*grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;*/
-    /*grid-template-areas: "regular monday peprally special homeroom club";*/
-    flex-grow: 1;
+	/*grid-template-areas: "regular monday peprally special homeroom club";*/
+	flex-grow: 1;
 }
 .cardformatter {
-    padding: 3vw;
-    border: 1px solid black;
-    margin: 1vw;
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
+	padding: 3vw;
+	border: 1px solid black;
+	margin: 1vw;
+	display: flex;
+	justify-content: center;
+	font-size: 20px;
 }
 .cardformatter:hover {
-    cursor: pointer;
+	cursor: pointer;
 }
 .schedulebodyholder {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 }
 .sideinfotableformatter {
-    border-collapse: collapse;
-    text-align: center;
-    font-size: 40px;
+	border-collapse: collapse;
+	text-align: center;
+	font-size: 40px;
 }
 
 td {
-    border: 1px solid red;
-    border-collapse: collapse;
+	border: 1px solid red;
+	border-collapse: collapse;
 }
 th {
-    border: 1px solid red;
-    border-collapse: collapse;
+	border: 1px solid red;
+	border-collapse: collapse;
 }
 .infoholdergeneralflexer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-grow: 1;
 }
 .infoholderpfixer {
-    display: flex;
-    justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 .sideinfocloserbutton {
-    color: #aaaaaa;
-    font-size: 28px;
-    font-weight: bold;
-    flex-grow: 0.01;
-    font-family: 'Roboto', sans-serif;
-    margin-top: 0px;
-    margin-bottom: 0px;
+	color: #aaaaaa;
+	font-size: 28px;
+	font-weight: bold;
+	flex-grow: 0.01;
+	font-family: "Roboto", sans-serif;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 .sideinfocloserbutton:hover {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
 }
 /*Bell Schedules*/
 .bellbuttonholder {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-left: 1.5vw;
-    margin-right: 1vw;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-left: 1.5vw;
+	margin-right: 1vw;
 }
 .bellbuttonholder:hover {
-    cursor: pointer;
+	cursor: pointer;
 }
 .belldropdownpformat {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-right: 15px;
-    padding-left: 5px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-right: 15px;
+	padding-left: 5px;
 }
 .belldropdownimg {
-    width: 30px;
+	width: 30px;
 }
 
 /*Sport Schedules*/
 
 .sportbuttonholder {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-left: 1.5vw;
-    margin-right: 1vw;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-left: 1.5vw;
+	margin-right: 1vw;
 }
 .sportbuttonholder:hover {
-    cursor: pointer;
+	cursor: pointer;
 }
 .sportdropdownpformat {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-right: 15px;
-    padding-left: 5px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-right: 15px;
+	padding-left: 5px;
 }
 .sportdropdownimg {
-    width: 30px;
+	width: 30px;
 }
 .sportscheduleholder {
-    /*Note: Do not use or delete this class,
+	/*Note: Do not use or delete this class,
     a JS function needs it*/
-    display: none;
+	display: none;
 }
-
 
 /*.bellscheduleholder {
     Note: Do not use or delete this class,
     a JS function needs it
 }*/
 .specialscheduleholder {
-    /*Note: Do not use or delete this class,
+	/*Note: Do not use or delete this class,
     a JS function needs it*/
-    display: none;
+	display: none;
 }
 
 /*Special Schedules*/
 .specialbuttonholder {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-left: 1.5vw;
-    margin-right: 1vw;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-left: 1.5vw;
+	margin-right: 1vw;
 }
 .specialbuttonholder:hover {
-    cursor: pointer;
+	cursor: pointer;
 }
 .specialdropdownimg {
-    width: 30px;
+	width: 30px;
 }
 .specialdropdownpformat {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-right: 15px;
-    padding-left: 5px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-right: 15px;
+	padding-left: 5px;
 }
-
-
 
 /*The right side info holders*/
 .special1infoholder {
-    flex-grow: 0.3;
-    display: none;
-    border: 0.1px solid black;
-    margin-right: 15px;
-    padding: 15px;
+	flex-grow: 0.3;
+	display: none;
+	border: 0.1px solid black;
+	margin-right: 15px;
+	padding: 15px;
 }
 .special2infoholder {
-    flex-grow: 0.3;
-    display: none;
-    border: 0.1px solid black;
-    margin-right: 15px;
-    padding: 15px;
+	flex-grow: 0.3;
+	display: none;
+	border: 0.1px solid black;
+	margin-right: 15px;
+	padding: 15px;
 }
 .special3infoholder {
-    flex-grow: 0.3;
-    display: none;
-    border: 0.1px solid black;
-    margin-right: 15px;
-    padding: 15px;
+	flex-grow: 0.3;
+	display: none;
+	border: 0.1px solid black;
+	margin-right: 15px;
+	padding: 15px;
 }
 .special4infoholder {
-    flex-grow: 0.3;
-    display: none;
-    border: 0.1px solid black;
-    margin-right: 15px;
-    padding: 15px;
+	flex-grow: 0.3;
+	display: none;
+	border: 0.1px solid black;
+	margin-right: 15px;
+	padding: 15px;
 }
 .special5infoholder {
-    flex-grow: 0.3;
-    display: none;
-    border: 0.1px solid black;
-    margin-right: 15px;
-    padding: 15px;
+	flex-grow: 0.3;
+	display: none;
+	border: 0.1px solid black;
+	margin-right: 15px;
+	padding: 15px;
 }
 .special6infoholder {
-    flex-grow: 0.3;
-    display: none;
-    border: 0.1px solid black;
-    margin-right: 15px;
-    padding: 15px;
+	flex-grow: 0.3;
+	display: none;
+	border: 0.1px solid black;
+	margin-right: 15px;
+	padding: 15px;
 }
 .special7infoholder {
-    flex-grow: 0.3;
-    display: none;
-    border: 0.1px solid black;
-    margin-right: 15px;
-    padding: 15px;
+	flex-grow: 0.3;
+	display: none;
+	border: 0.1px solid black;
+	margin-right: 15px;
+	padding: 15px;
 }
 
 .sport1infoholder {
-    flex-grow: 0.3;
-    display: none;
-    border: 0.1px solid black;
-    margin-right: 15px;
-    padding: 15px;
+	flex-grow: 0.3;
+	display: none;
+	border: 0.1px solid black;
+	margin-right: 15px;
+	padding: 15px;
 }
 .sport2infoholder {
-    flex-grow: 0.3;
-    display: none;
-    border: 0.1px solid black;
-    margin-right: 15px;
-    padding: 15px;
+	flex-grow: 0.3;
+	display: none;
+	border: 0.1px solid black;
+	margin-right: 15px;
+	padding: 15px;
 }
 .sport3infoholder {
-    flex-grow: 0.3;
-    display: none;
-    border: 0.1px solid black;
-    margin-right: 15px;
-    padding: 15px;
+	flex-grow: 0.3;
+	display: none;
+	border: 0.1px solid black;
+	margin-right: 15px;
+	padding: 15px;
 }
 .sport4infoholder {
-    flex-grow: 0.3;
-    display: none;
-    border: 0.1px solid black;
-    margin-right: 15px;
-    padding: 15px;
+	flex-grow: 0.3;
+	display: none;
+	border: 0.1px solid black;
+	margin-right: 15px;
+	padding: 15px;
 }
 .sport5infoholder {
-    flex-grow: 0.3;
-    display: none;
-    border: 0.1px solid black;
-    margin-right: 15px;
-    padding: 15px;
+	flex-grow: 0.3;
+	display: none;
+	border: 0.1px solid black;
+	margin-right: 15px;
+	padding: 15px;
 }
 .sport6infoholder {
-    flex-grow: 0.3;
-    display: none;
-    border: 0.1px solid black;
-    margin-right: 15px;
-    padding: 15px;
+	flex-grow: 0.3;
+	display: none;
+	border: 0.1px solid black;
+	margin-right: 15px;
+	padding: 15px;
 }
 .sport7infoholder {
-    flex-grow: 0.3;
-    display: none;
-    border: 0.1px solid black;
-    margin-right: 15px;
-    padding: 15px;
+	flex-grow: 0.3;
+	display: none;
+	border: 0.1px solid black;
+	margin-right: 15px;
+	padding: 15px;
 }
 .sport1infoholder {
-    flex-grow: 0.3;
-    display: none;
-    border: 0.1px solid black;
-    margin-right: 15px;
-    padding: 15px;
+	flex-grow: 0.3;
+	display: none;
+	border: 0.1px solid black;
+	margin-right: 15px;
+	padding: 15px;
 }
 .regularinfoholder {
-    flex-grow: 0.3;
-    display: none;
-    border: 0.1px solid black;
-    margin-right: 15px;
-    padding: 15px;
+	flex-grow: 0.3;
+	display: none;
+	border: 0.1px solid black;
+	margin-right: 15px;
+	padding: 15px;
 }
 
 .mondayinfoholder {
-    flex-grow: 0.3;
-    display: none;
-    border: 0.1px solid black;
-    margin-right: 15px;
-    padding: 15px;
+	flex-grow: 0.3;
+	display: none;
+	border: 0.1px solid black;
+	margin-right: 15px;
+	padding: 15px;
 }
 .peprallyinfoholder {
-    flex-grow: 0.3;
-    display: none;
-    border: 0.1px solid black;
-    margin-right: 15px;
-    padding: 15px;
+	flex-grow: 0.3;
+	display: none;
+	border: 0.1px solid black;
+	margin-right: 15px;
+	padding: 15px;
 }
 .specialinfoholder {
-    flex-grow: 0.3;
-    display: none;
-    border: 0.1px solid black;
-    margin-right: 15px;
-    padding: 15px;
+	flex-grow: 0.3;
+	display: none;
+	border: 0.1px solid black;
+	margin-right: 15px;
+	padding: 15px;
 }
 .homeroominfoholder {
-    flex-grow: 0.3;
-    display: none;
-    border: 0.1px solid black;
-    margin-right: 15px;
-    padding: 15px;
+	flex-grow: 0.3;
+	display: none;
+	border: 0.1px solid black;
+	margin-right: 15px;
+	padding: 15px;
 }
 .clubinfoholder {
-    flex-grow: 0.3;
-    display: none;
-    border: 0.1px solid black;
-    margin-right: 15px;
-    padding: 15px;
+	flex-grow: 0.3;
+	display: none;
+	border: 0.1px solid black;
+	margin-right: 15px;
+	padding: 15px;
 }
 /*End of the right side info holders*/
-
-
-
 
 /*MEDIA QUERIES LAND*/
 @media only screen and (max-width: 1000px) {
 	.theschedulegrid {
-        color: red;
-        font-size: 30px;
-    }
-    .headerbuttonsmodifier {
-        font-size: 30px;
-        padding-left: 5vw;
-        padding-right: 5vw;
-    }
+		color: red;
+		font-size: 30px;
+	}
+	.headerbuttonsmodifier {
+		font-size: 30px;
+		padding-left: 5vw;
+		padding-right: 5vw;
+	}
 }

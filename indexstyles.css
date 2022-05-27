@@ -1,29 +1,29 @@
 /*And now, we begin at the beginning*/
 /*Home page header*/
 .headerbuttonsholder {
-    display: flex;
-    justify-content: flex-end;
+	display: flex;
+	justify-content: flex-end;
 }
 .headerbuttonsmodifier {
-    padding-left: 0.5vw;
-    padding-right: 0.5vw;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    text-decoration: none;
-    color: black;
-    font-size: 24px;
+	padding-left: 0.5vw;
+	padding-right: 0.5vw;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	text-decoration: none;
+	color: black;
+	font-size: 24px;
 }
 .headerbuttonsmodifier:hover {
-    color: red;
+	color: red;
 }
 
 .headertopthingoid {
-    margin-top: 3vh;
-    margin-bottom: 0px;
-    margin-left: 12vw;
+	margin-top: 3vh;
+	margin-bottom: 0px;
+	margin-left: 12vw;
 }
 .experimental {
-    color: red;
+	color: red;
 }
 
 /*Home Page body*.
@@ -31,12 +31,12 @@
 /*MEDIA QUERIES LAND*/
 @media only screen and (max-width: 1000px) {
 	.theschedulegrid {
-        color: red;
-        font-size: 30px;
-    }
-    .headerbuttonsmodifier {
-        font-size: 30px;
-        padding-left: 5vw;
-        padding-right: 5vw;
-    }
+		color: red;
+		font-size: 30px;
+	}
+	.headerbuttonsmodifier {
+		font-size: 30px;
+		padding-left: 5vw;
+		padding-right: 5vw;
+	}
 }

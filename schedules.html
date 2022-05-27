@@ -1,22 +1,18 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="schedulesstyle.css">
-        <link rel="shortcut icon" href="favicon.ico">
-        <title>Schedules</title>
-        <script src="app.js" defer></script>
-        <script src="bravery.js"></script>
-        
-        <link rel="stylesheet" href="headerfooterstyles.css">
-    </head>
-    
+	<head>
+		<link rel="stylesheet" href="schedulesstyle.css" />
+		<link rel="shortcut icon" href="favicon.ico" />
+		<title>Schedules</title>
+		<script src="app.js" defer></script>
+		<script src="bravery.js"></script>
 
+		<link rel="stylesheet" href="headerfooterstyles.css" />
+	</head>
 
-
-
-    <body style="margin: 0px; font-family: Arial, Helvetica, sans-serif;">
-        <!--Header-->
-        <!--<div class="headertopthingoid">
+	<body style="margin: 0px; font-family: Arial, Helvetica, sans-serif">
+		<!--Header-->
+		<!--<div class="headertopthingoid">
             <h1 style="margin: 0px;">Project 002</h1>
         </div>
 
@@ -33,1197 +29,1194 @@
 
         </div>
         <hr style="border-top: 1px solid black; margin-top: 0.1vw;">-->
-        <header>
-            <nav class="navformatter">
-                <a href="index.html" class="navlinkformatter">Home</a>
-                <a href="schedules.html" class="navlinkformatter">Schedules</a>
-                <a href="calendars.html" class="navlinkformatter">Calendars</a>
-                <a href="apush.html" class="navlinkformatter"> APUSH Reminders</a>
-            </nav>
-        </header>
-        
-        <!--Main-->
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div style="margin-left: 1vw; margin-right: 1vw;">
-            <!--Bell Schedules-->
+		<header>
+			<nav class="navformatter">
+				<a href="index.html" class="navlinkformatter">Home</a>
+				<a href="schedules.html" class="navlinkformatter">Schedules</a>
+				<a href="calendars.html" class="navlinkformatter">Calendars</a>
+				<a href="apush.html" class="navlinkformatter"> APUSH Reminders</a>
+			</nav>
+		</header>
 
-            <div>
-                <div class="bellbuttonholder" onclick="bellscheduleminimizer()">
-                    <!--In here put the dropdown button thing that will look cool-->
-                    <!--Here is where I got the right facing triangle:
+		<!--Main-->
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<div style="margin-left: 1vw; margin-right: 1vw">
+			<!--Bell Schedules-->
+
+			<div>
+				<div class="bellbuttonholder" onclick="bellscheduleminimizer()">
+					<!--In here put the dropdown button thing that will look cool-->
+					<!--Here is where I got the right facing triangle:
                     https://commons.wikimedia.org/wiki/File:TriangleArrow-Right.svg-->
-                    <!--Here is where I got the down facing triangle:
+					<!--Here is where I got the down facing triangle:
                     https://commons.wikimedia.org/wiki/File:TriangleArrow-Down.svg-->
-                    <img src="downfacingtriangle.svg" class="belldropdownimg">
-                    <p class="belldropdownpformat">Bell Schedules</p>
-                    <div style="border-top: 1px solid black; flex-grow: 1;">
-                        
-                        <!--<button onclick="bellscheduleminimizer()">Minimize</button>-->
-                        <!--<hr style="border-top: 1px solid black;">-->
-                    </div>
-                </div>
-                <!--Use this div to modify its display (right under this line)-->
-                <div class="bellscheduleholder">
-                    <!--cannot modify "schedulebodyholder"'s display bc it is flex'-->
-                    <div class="schedulebodyholder">
-                        <div class="theschedulegrid">
-                            <div class="cardformatter" onclick="regularfunction()">
-                                <p>Regular</p>
-                            </div>
-                            <div class="cardformatter" onclick="mondayfunction()">
-                                <p>Monday</p>
-                            </div>
-                            <div class="cardformatter" onclick="peprallyfunction()">
-                                <p>PepRally</p>
-                            </div>
-                            <div class="cardformatter" onclick="specialfunction()">
-                                <p>Special</p>
-                            </div>
-                            <div class="cardformatter" onclick="homeroomfunction()">
-                                <p>Homeroom</p>
-                            </div>
-                            <div class="cardformatter" onclick="clubfunction()">
-                                <p>Club</p>
-                            </div>
-                        </div>
+					<img src="downfacingtriangle.svg" class="belldropdownimg" />
+					<p class="belldropdownpformat">Bell Schedules</p>
+					<div style="border-top: 1px solid black; flex-grow: 1">
+						<!--<button onclick="bellscheduleminimizer()">Minimize</button>-->
+						<!--<hr style="border-top: 1px solid black;">-->
+					</div>
+				</div>
+				<!--Use this div to modify its display (right under this line)-->
+				<div class="bellscheduleholder">
+					<!--cannot modify "schedulebodyholder"'s display bc it is flex'-->
+					<div class="schedulebodyholder">
+						<div class="theschedulegrid">
+							<div class="cardformatter" onclick="regularfunction()">
+								<p>Regular</p>
+							</div>
+							<div class="cardformatter" onclick="mondayfunction()">
+								<p>Monday</p>
+							</div>
+							<div class="cardformatter" onclick="peprallyfunction()">
+								<p>PepRally</p>
+							</div>
+							<div class="cardformatter" onclick="specialfunction()">
+								<p>Special</p>
+							</div>
+							<div class="cardformatter" onclick="homeroomfunction()">
+								<p>Homeroom</p>
+							</div>
+							<div class="cardformatter" onclick="clubfunction()">
+								<p>Club</p>
+							</div>
+						</div>
 
-                        <div class="regularinfoholder">
-                            <div style="display: flex; justify-content: center;">
-                                <!--The table-->
-                                <div class="infoholdergeneralflexer">
-                                    <div class="infoholderpfixer">
-                                        <p>hi I am regular</p>
-                                    </div>
-                                    <table class="sideinfotableformatter">
-                                        <tbody>
-                                            <tr>
-                                                <th>Classes</th>
-                                                <th>Time</th>
-                                            </tr>
-                                            <tr>
-                                                <td>P1</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P2</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P3</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P4</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P5</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P6</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P7</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P8</td>
-                                                <td>blah</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            <p class="sideinfocloserbutton" onclick="regularfunction()">×</p>
-                            </div>
-                        </div>
-                        <div class="mondayinfoholder">
-                            <div style="display: flex; justify-content: center;">
-                                <!--The table-->
-                                <div class="infoholdergeneralflexer">
-                                    <div class="infoholderpfixer">
-                                        <p>hi I am monday</p>
-                                    </div>
-                                    <table class="sideinfotableformatter">
-                                        <tbody>
-                                            <tr>
-                                                <th>Classes</th>
-                                                <th>Time</th>
-                                            </tr>
-                                            <tr>
-                                                <td>P1</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P2</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P3</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P4</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P5</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P6</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P7</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P8</td>
-                                                <td>blah</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            <p class="sideinfocloserbutton" onclick="mondayfunction()">×</p>
-                            </div>
-                        </div>
-                        <div class="peprallyinfoholder">
-                            <div style="display: flex; justify-content: center;">
-                                <!--The table-->
-                                <div class="infoholdergeneralflexer">
-                                    <div class="infoholderpfixer">
-                                        <p>hi I am peprally</p>
-                                    </div>
-                                    <table class="sideinfotableformatter">
-                                        <tbody>
-                                            <tr>
-                                                <th>Classes</th>
-                                                <th>Time</th>
-                                            </tr>
-                                            <tr>
-                                                <td>P1</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P2</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P3</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P4</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P5</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P6</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P7</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P8</td>
-                                                <td>blah</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            <p class="sideinfocloserbutton" onclick="peprallyfunction()">×</p>
-                            </div>
-                        </div>
-                        <div class="specialinfoholder">
-                            <div style="display: flex; justify-content: center;">
-                                <!--The table-->
-                                <div class="infoholdergeneralflexer">
-                                    <div class="infoholderpfixer">
-                                        <p>hi I am special</p>
-                                    </div>
-                                    <table class="sideinfotableformatter">
-                                        <tbody>
-                                            <tr>
-                                                <th>Classes</th>
-                                                <th>Time</th>
-                                            </tr>
-                                            <tr>
-                                                <td>P1</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P2</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P3</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P4</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P5</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P6</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P7</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P8</td>
-                                                <td>blah</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            <p class="sideinfocloserbutton" onclick="specialfunction()">×</p>
-                            </div>
-                        </div>
-                        <div class="homeroominfoholder">
-                            <div style="display: flex; justify-content: center;">
-                                <!--The table-->
-                                <div class="infoholdergeneralflexer">
-                                    <div class="infoholderpfixer">
-                                        <p>hi I am homeroom</p>
-                                    </div>
-                                    <table class="sideinfotableformatter">
-                                        <tbody>
-                                            <tr>
-                                                <th>Classes</th>
-                                                <th>Time</th>
-                                            </tr>
-                                            <tr>
-                                                <td>P1</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P2</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P3</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P4</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P5</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P6</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P7</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P8</td>
-                                                <td>blah</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            <p class="sideinfocloserbutton" onclick="homeroomfunction()">×</p>
-                            </div>
-                        </div>
-                        <div class="clubinfoholder">
-                            <div style="display: flex; justify-content: center;">
-                                <!--The table-->
-                                <div class="infoholdergeneralflexer">
-                                    <div class="infoholderpfixer">
-                                        <p>hi I am club</p>
-                                    </div>
-                                    <table class="sideinfotableformatter">
-                                        <tbody>
-                                            <tr>
-                                                <th>Classes</th>
-                                                <th>Time</th>
-                                            </tr>
-                                            <tr>
-                                                <td>P1</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P2</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P3</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P4</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P5</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P6</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P7</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P8</td>
-                                                <td>blah</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            <p class="sideinfocloserbutton" onclick="clubfunction()">×</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+						<div class="regularinfoholder">
+							<div style="display: flex; justify-content: center">
+								<!--The table-->
+								<div class="infoholdergeneralflexer">
+									<div class="infoholderpfixer">
+										<p>hi I am regular</p>
+									</div>
+									<table class="sideinfotableformatter">
+										<tbody>
+											<tr>
+												<th>Classes</th>
+												<th>Time</th>
+											</tr>
+											<tr>
+												<td>P1</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P2</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P3</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P4</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P5</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P6</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P7</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P8</td>
+												<td>blah</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<p class="sideinfocloserbutton" onclick="regularfunction()">×</p>
+							</div>
+						</div>
+						<div class="mondayinfoholder">
+							<div style="display: flex; justify-content: center">
+								<!--The table-->
+								<div class="infoholdergeneralflexer">
+									<div class="infoholderpfixer">
+										<p>hi I am monday</p>
+									</div>
+									<table class="sideinfotableformatter">
+										<tbody>
+											<tr>
+												<th>Classes</th>
+												<th>Time</th>
+											</tr>
+											<tr>
+												<td>P1</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P2</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P3</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P4</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P5</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P6</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P7</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P8</td>
+												<td>blah</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<p class="sideinfocloserbutton" onclick="mondayfunction()">×</p>
+							</div>
+						</div>
+						<div class="peprallyinfoholder">
+							<div style="display: flex; justify-content: center">
+								<!--The table-->
+								<div class="infoholdergeneralflexer">
+									<div class="infoholderpfixer">
+										<p>hi I am peprally</p>
+									</div>
+									<table class="sideinfotableformatter">
+										<tbody>
+											<tr>
+												<th>Classes</th>
+												<th>Time</th>
+											</tr>
+											<tr>
+												<td>P1</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P2</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P3</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P4</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P5</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P6</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P7</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P8</td>
+												<td>blah</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<p class="sideinfocloserbutton" onclick="peprallyfunction()">×</p>
+							</div>
+						</div>
+						<div class="specialinfoholder">
+							<div style="display: flex; justify-content: center">
+								<!--The table-->
+								<div class="infoholdergeneralflexer">
+									<div class="infoholderpfixer">
+										<p>hi I am special</p>
+									</div>
+									<table class="sideinfotableformatter">
+										<tbody>
+											<tr>
+												<th>Classes</th>
+												<th>Time</th>
+											</tr>
+											<tr>
+												<td>P1</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P2</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P3</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P4</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P5</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P6</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P7</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P8</td>
+												<td>blah</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<p class="sideinfocloserbutton" onclick="specialfunction()">×</p>
+							</div>
+						</div>
+						<div class="homeroominfoholder">
+							<div style="display: flex; justify-content: center">
+								<!--The table-->
+								<div class="infoholdergeneralflexer">
+									<div class="infoholderpfixer">
+										<p>hi I am homeroom</p>
+									</div>
+									<table class="sideinfotableformatter">
+										<tbody>
+											<tr>
+												<th>Classes</th>
+												<th>Time</th>
+											</tr>
+											<tr>
+												<td>P1</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P2</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P3</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P4</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P5</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P6</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P7</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P8</td>
+												<td>blah</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<p class="sideinfocloserbutton" onclick="homeroomfunction()">×</p>
+							</div>
+						</div>
+						<div class="clubinfoholder">
+							<div style="display: flex; justify-content: center">
+								<!--The table-->
+								<div class="infoholdergeneralflexer">
+									<div class="infoholderpfixer">
+										<p>hi I am club</p>
+									</div>
+									<table class="sideinfotableformatter">
+										<tbody>
+											<tr>
+												<th>Classes</th>
+												<th>Time</th>
+											</tr>
+											<tr>
+												<td>P1</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P2</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P3</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P4</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P5</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P6</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P7</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P8</td>
+												<td>blah</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<p class="sideinfocloserbutton" onclick="clubfunction()">×</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-            <br>
-            <br>
-            <br>
+			<br />
+			<br />
+			<br />
 
-            <!--Sports Schedules and Event Dates-->
+			<!--Sports Schedules and Event Dates-->
 
-            <div>
-                <div class="sportbuttonholder" onclick="sportscheduleminimizer()">
-                    <!--In here put the dropdown button thing that will look cool-->
-                    <!--Here is where I got the right facing triangle:
+			<div>
+				<div class="sportbuttonholder" onclick="sportscheduleminimizer()">
+					<!--In here put the dropdown button thing that will look cool-->
+					<!--Here is where I got the right facing triangle:
                     https://commons.wikimedia.org/wiki/File:TriangleArrow-Right.svg-->
-                    <!--Here is where I got the down facing triangle:
+					<!--Here is where I got the down facing triangle:
                     https://commons.wikimedia.org/wiki/File:TriangleArrow-Down.svg-->
-                    <img src="rightfacingtriangle.svg" class="sportdropdownimg">
-                    <p class="sportdropdownpformat">Sports Schedules</p>
-                    <div style="border-top: 1px solid black; flex-grow: 1;">
-                        
-                        <!--<button onclick="bellscheduleminimizer()">Minimize</button>-->
-                        <!--<hr style="border-top: 1px solid black;">-->
-                    </div>
-                </div>
-                <div class="sportscheduleholder">
-                    <div class="schedulebodyholder">
-                        <div class="theschedulegrid">
-                            <div class="cardformatter" onclick="sport1()">
-                                <p>Sport 1</p>
-                            </div>
-                            <div class="cardformatter" onclick="sport2()">
-                                <p>Sport 2</p>
-                            </div>
-                            <div class="cardformatter" onclick="sport3()">
-                                <p>Sport 3</p>
-                            </div>
-                            <div class="cardformatter" onclick="sport4()">
-                                <p>Sport 4</p>
-                            </div>
-                            <div class="cardformatter" onclick="sport5()">
-                                <p>Sport 5</p>
-                            </div>
-                            <div class="cardformatter" onclick="sport6()">
-                                <p>Sport 6</p>
-                            </div>
-                            <div class="cardformatter" onclick="sport7()">
-                                <p>Sport 7</p>
-                            </div>
-                        </div>
-                        
-                        <!--Data cards-->
+					<img src="rightfacingtriangle.svg" class="sportdropdownimg" />
+					<p class="sportdropdownpformat">Sports Schedules</p>
+					<div style="border-top: 1px solid black; flex-grow: 1">
+						<!--<button onclick="bellscheduleminimizer()">Minimize</button>-->
+						<!--<hr style="border-top: 1px solid black;">-->
+					</div>
+				</div>
+				<div class="sportscheduleholder">
+					<div class="schedulebodyholder">
+						<div class="theschedulegrid">
+							<div class="cardformatter" onclick="sport1()">
+								<p>Sport 1</p>
+							</div>
+							<div class="cardformatter" onclick="sport2()">
+								<p>Sport 2</p>
+							</div>
+							<div class="cardformatter" onclick="sport3()">
+								<p>Sport 3</p>
+							</div>
+							<div class="cardformatter" onclick="sport4()">
+								<p>Sport 4</p>
+							</div>
+							<div class="cardformatter" onclick="sport5()">
+								<p>Sport 5</p>
+							</div>
+							<div class="cardformatter" onclick="sport6()">
+								<p>Sport 6</p>
+							</div>
+							<div class="cardformatter" onclick="sport7()">
+								<p>Sport 7</p>
+							</div>
+						</div>
 
-                        <div class="sport1infoholder">
-                            <div style="display: flex; justify-content: center;">
-                                <!--The table-->
-                                <div class="infoholdergeneralflexer">
-                                    <div class="infoholderpfixer">
-                                        <p>hi I am sport1</p>
-                                    </div>
-                                    <table class="sideinfotableformatter">
-                                        <tbody>
-                                            <tr>
-                                                <th>Classes</th>
-                                                <th>Time</th>
-                                            </tr>
-                                            <tr>
-                                                <td>P1</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P2</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P3</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P4</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P5</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P6</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P7</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P8</td>
-                                                <td>blah</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            <p class="sideinfocloserbutton" onclick="sport1()">×</p>
-                            </div>
-                        </div>
-                        <div class="sport2infoholder">
-                            <div style="display: flex; justify-content: center;">
-                                <!--The table-->
-                                <div class="infoholdergeneralflexer">
-                                    <div class="infoholderpfixer">
-                                        <p>hi I am sport2</p>
-                                    </div>
-                                    <table class="sideinfotableformatter">
-                                        <tbody>
-                                            <tr>
-                                                <th>Classes</th>
-                                                <th>Time</th>
-                                            </tr>
-                                            <tr>
-                                                <td>P1</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P2</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P3</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P4</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P5</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P6</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P7</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P8</td>
-                                                <td>blah</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            <p class="sideinfocloserbutton" onclick="sport2()">×</p>
-                            </div>
-                        </div>
-                        <div class="sport3infoholder">
-                            <div style="display: flex; justify-content: center;">
-                                <!--The table-->
-                                <div class="infoholdergeneralflexer">
-                                    <div class="infoholderpfixer">
-                                        <p>hi I am sport3</p>
-                                    </div>
-                                    <table class="sideinfotableformatter">
-                                        <tbody>
-                                            <tr>
-                                                <th>Classes</th>
-                                                <th>Time</th>
-                                            </tr>
-                                            <tr>
-                                                <td>P1</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P2</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P3</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P4</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P5</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P6</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P7</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P8</td>
-                                                <td>blah</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            <p class="sideinfocloserbutton" onclick="sport3()">×</p>
-                            </div>
-                        </div>
-                        <div class="sport4infoholder">
-                            <div style="display: flex; justify-content: center;">
-                                <!--The table-->
-                                <div class="infoholdergeneralflexer">
-                                    <div class="infoholderpfixer">
-                                        <p>hi I am sport4</p>
-                                    </div>
-                                    <table class="sideinfotableformatter">
-                                        <tbody>
-                                            <tr>
-                                                <th>Classes</th>
-                                                <th>Time</th>
-                                            </tr>
-                                            <tr>
-                                                <td>P1</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P2</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P3</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P4</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P5</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P6</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P7</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P8</td>
-                                                <td>blah</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            <p class="sideinfocloserbutton" onclick="sport4()">×</p>
-                            </div>
-                        </div>
-                        <div class="sport5infoholder">
-                            <div style="display: flex; justify-content: center;">
-                                <!--The table-->
-                                <div class="infoholdergeneralflexer">
-                                    <div class="infoholderpfixer">
-                                        <p>hi I am sport5</p>
-                                    </div>
-                                    <table class="sideinfotableformatter">
-                                        <tbody>
-                                            <tr>
-                                                <th>Classes</th>
-                                                <th>Time</th>
-                                            </tr>
-                                            <tr>
-                                                <td>P1</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P2</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P3</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P4</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P5</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P6</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P7</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P8</td>
-                                                <td>blah</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            <p class="sideinfocloserbutton" onclick="sport5()">×</p>
-                            </div>
-                        </div>
-                        <div class="sport6infoholder">
-                            <div style="display: flex; justify-content: center;">
-                                <!--The table-->
-                                <div class="infoholdergeneralflexer">
-                                    <div class="infoholderpfixer">
-                                        <p>hi I am sport6</p>
-                                    </div>
-                                    <table class="sideinfotableformatter">
-                                        <tbody>
-                                            <tr>
-                                                <th>Classes</th>
-                                                <th>Time</th>
-                                            </tr>
-                                            <tr>
-                                                <td>P1</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P2</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P3</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P4</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P5</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P6</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P7</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P8</td>
-                                                <td>blah</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            <p class="sideinfocloserbutton" onclick="sport6()">×</p>
-                            </div>
-                        </div>
-                        <div class="sport7infoholder">
-                            <div style="display: flex; justify-content: center;">
-                                <!--The table-->
-                                <div class="infoholdergeneralflexer">
-                                    <div class="infoholderpfixer">
-                                        <p>hi I am sport7</p>
-                                    </div>
-                                    <table class="sideinfotableformatter">
-                                        <tbody>
-                                            <tr>
-                                                <th>Classes</th>
-                                                <th>Time</th>
-                                            </tr>
-                                            <tr>
-                                                <td>P1</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P2</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P3</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P4</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P5</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P6</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P7</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P8</td>
-                                                <td>blah</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            <p class="sideinfocloserbutton" onclick="sport7()">×</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+						<!--Data cards-->
 
-            <br>
-            <br>
-            <br>
+						<div class="sport1infoholder">
+							<div style="display: flex; justify-content: center">
+								<!--The table-->
+								<div class="infoholdergeneralflexer">
+									<div class="infoholderpfixer">
+										<p>hi I am sport1</p>
+									</div>
+									<table class="sideinfotableformatter">
+										<tbody>
+											<tr>
+												<th>Classes</th>
+												<th>Time</th>
+											</tr>
+											<tr>
+												<td>P1</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P2</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P3</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P4</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P5</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P6</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P7</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P8</td>
+												<td>blah</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<p class="sideinfocloserbutton" onclick="sport1()">×</p>
+							</div>
+						</div>
+						<div class="sport2infoholder">
+							<div style="display: flex; justify-content: center">
+								<!--The table-->
+								<div class="infoholdergeneralflexer">
+									<div class="infoholderpfixer">
+										<p>hi I am sport2</p>
+									</div>
+									<table class="sideinfotableformatter">
+										<tbody>
+											<tr>
+												<th>Classes</th>
+												<th>Time</th>
+											</tr>
+											<tr>
+												<td>P1</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P2</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P3</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P4</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P5</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P6</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P7</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P8</td>
+												<td>blah</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<p class="sideinfocloserbutton" onclick="sport2()">×</p>
+							</div>
+						</div>
+						<div class="sport3infoholder">
+							<div style="display: flex; justify-content: center">
+								<!--The table-->
+								<div class="infoholdergeneralflexer">
+									<div class="infoholderpfixer">
+										<p>hi I am sport3</p>
+									</div>
+									<table class="sideinfotableformatter">
+										<tbody>
+											<tr>
+												<th>Classes</th>
+												<th>Time</th>
+											</tr>
+											<tr>
+												<td>P1</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P2</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P3</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P4</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P5</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P6</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P7</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P8</td>
+												<td>blah</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<p class="sideinfocloserbutton" onclick="sport3()">×</p>
+							</div>
+						</div>
+						<div class="sport4infoholder">
+							<div style="display: flex; justify-content: center">
+								<!--The table-->
+								<div class="infoholdergeneralflexer">
+									<div class="infoholderpfixer">
+										<p>hi I am sport4</p>
+									</div>
+									<table class="sideinfotableformatter">
+										<tbody>
+											<tr>
+												<th>Classes</th>
+												<th>Time</th>
+											</tr>
+											<tr>
+												<td>P1</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P2</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P3</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P4</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P5</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P6</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P7</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P8</td>
+												<td>blah</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<p class="sideinfocloserbutton" onclick="sport4()">×</p>
+							</div>
+						</div>
+						<div class="sport5infoholder">
+							<div style="display: flex; justify-content: center">
+								<!--The table-->
+								<div class="infoholdergeneralflexer">
+									<div class="infoholderpfixer">
+										<p>hi I am sport5</p>
+									</div>
+									<table class="sideinfotableformatter">
+										<tbody>
+											<tr>
+												<th>Classes</th>
+												<th>Time</th>
+											</tr>
+											<tr>
+												<td>P1</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P2</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P3</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P4</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P5</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P6</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P7</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P8</td>
+												<td>blah</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<p class="sideinfocloserbutton" onclick="sport5()">×</p>
+							</div>
+						</div>
+						<div class="sport6infoholder">
+							<div style="display: flex; justify-content: center">
+								<!--The table-->
+								<div class="infoholdergeneralflexer">
+									<div class="infoholderpfixer">
+										<p>hi I am sport6</p>
+									</div>
+									<table class="sideinfotableformatter">
+										<tbody>
+											<tr>
+												<th>Classes</th>
+												<th>Time</th>
+											</tr>
+											<tr>
+												<td>P1</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P2</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P3</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P4</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P5</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P6</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P7</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P8</td>
+												<td>blah</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<p class="sideinfocloserbutton" onclick="sport6()">×</p>
+							</div>
+						</div>
+						<div class="sport7infoholder">
+							<div style="display: flex; justify-content: center">
+								<!--The table-->
+								<div class="infoholdergeneralflexer">
+									<div class="infoholderpfixer">
+										<p>hi I am sport7</p>
+									</div>
+									<table class="sideinfotableformatter">
+										<tbody>
+											<tr>
+												<th>Classes</th>
+												<th>Time</th>
+											</tr>
+											<tr>
+												<td>P1</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P2</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P3</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P4</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P5</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P6</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P7</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P8</td>
+												<td>blah</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<p class="sideinfocloserbutton" onclick="sport7()">×</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-            <!--Special Schedules and Events Dates-->
+			<br />
+			<br />
+			<br />
 
-            <div>
-                <div class="specialbuttonholder" onclick="specialscheduleminimizer()">
-                    <!--In here put the dropdown button thing that will look cool-->
-                    <!--Here is where I got the right facing triangle:
+			<!--Special Schedules and Events Dates-->
+
+			<div>
+				<div class="specialbuttonholder" onclick="specialscheduleminimizer()">
+					<!--In here put the dropdown button thing that will look cool-->
+					<!--Here is where I got the right facing triangle:
                     https://commons.wikimedia.org/wiki/File:TriangleArrow-Right.svg-->
-                    <!--Here is where I got the down facing triangle:
+					<!--Here is where I got the down facing triangle:
                     https://commons.wikimedia.org/wiki/File:TriangleArrow-Down.svg-->
-                    <img src="rightfacingtriangle.svg" class="specialdropdownimg">
-                    <p class="specialdropdownpformat">Special Schedules</p>
-                    <div style="border-top: 1px solid black; flex-grow: 1;">
-                        
-                        <!--<button onclick="bellscheduleminimizer()">Minimize</button>-->
-                        <!--<hr style="border-top: 1px solid black;">-->
-                    </div>
-                </div>
-                <div class="specialscheduleholder">
-                    <div class="schedulebodyholder">
-                        <div class="theschedulegrid">
-                            <div class="cardformatter" onclick="special1()">
-                                <p>Special 1</p>
-                            </div>
-                            <div class="cardformatter" onclick="special2()">
-                                <p>Special 2</p>
-                            </div>
-                            <div class="cardformatter" onclick="special3()">
-                                <p>Special 3</p>
-                            </div>
-                            <div class="cardformatter" onclick="special4()">
-                                <p>Special 4</p>
-                            </div>
-                            <div class="cardformatter" onclick="special5()">
-                                <p>Special 5</p>
-                            </div>
-                            <div class="cardformatter" onclick="special6()">
-                                <p>Special 6</p>
-                            </div>
-                            <div class="cardformatter" onclick="special7()">
-                                <p>Special 7</p>
-                            </div>
-                        </div>
-                        
-                        <!--Data cards-->
+					<img src="rightfacingtriangle.svg" class="specialdropdownimg" />
+					<p class="specialdropdownpformat">Special Schedules</p>
+					<div style="border-top: 1px solid black; flex-grow: 1">
+						<!--<button onclick="bellscheduleminimizer()">Minimize</button>-->
+						<!--<hr style="border-top: 1px solid black;">-->
+					</div>
+				</div>
+				<div class="specialscheduleholder">
+					<div class="schedulebodyholder">
+						<div class="theschedulegrid">
+							<div class="cardformatter" onclick="special1()">
+								<p>Special 1</p>
+							</div>
+							<div class="cardformatter" onclick="special2()">
+								<p>Special 2</p>
+							</div>
+							<div class="cardformatter" onclick="special3()">
+								<p>Special 3</p>
+							</div>
+							<div class="cardformatter" onclick="special4()">
+								<p>Special 4</p>
+							</div>
+							<div class="cardformatter" onclick="special5()">
+								<p>Special 5</p>
+							</div>
+							<div class="cardformatter" onclick="special6()">
+								<p>Special 6</p>
+							</div>
+							<div class="cardformatter" onclick="special7()">
+								<p>Special 7</p>
+							</div>
+						</div>
 
-                        <div class="special1infoholder">
-                            <div style="display: flex; justify-content: center;">
-                                <!--The table-->
-                                <div class="infoholdergeneralflexer">
-                                    <div class="infoholderpfixer">
-                                        <p>hi I am special1</p>
-                                    </div>
-                                    <table class="sideinfotableformatter">
-                                        <tbody>
-                                            <tr>
-                                                <th>Classes</th>
-                                                <th>Time</th>
-                                            </tr>
-                                            <tr>
-                                                <td>P1</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P2</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P3</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P4</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P5</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P6</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P7</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P8</td>
-                                                <td>blah</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            <p class="sideinfocloserbutton" onclick="special1()">×</p>
-                            </div>
-                        </div>
-                        <div class="special2infoholder">
-                            <div style="display: flex; justify-content: center;">
-                                <!--The table-->
-                                <div class="infoholdergeneralflexer">
-                                    <div class="infoholderpfixer">
-                                        <p>hi I am special2</p>
-                                    </div>
-                                    <table class="sideinfotableformatter">
-                                        <tbody>
-                                            <tr>
-                                                <th>Classes</th>
-                                                <th>Time</th>
-                                            </tr>
-                                            <tr>
-                                                <td>P1</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P2</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P3</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P4</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P5</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P6</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P7</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P8</td>
-                                                <td>blah</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            <p class="sideinfocloserbutton" onclick="special2()">×</p>
-                            </div>
-                        </div>
-                        <div class="special3infoholder">
-                            <div style="display: flex; justify-content: center;">
-                                <!--The table-->
-                                <div class="infoholdergeneralflexer">
-                                    <div class="infoholderpfixer">
-                                        <p>hi I am special3</p>
-                                    </div>
-                                    <table class="sideinfotableformatter">
-                                        <tbody>
-                                            <tr>
-                                                <th>Classes</th>
-                                                <th>Time</th>
-                                            </tr>
-                                            <tr>
-                                                <td>P1</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P2</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P3</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P4</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P5</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P6</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P7</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P8</td>
-                                                <td>blah</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            <p class="sideinfocloserbutton" onclick="special3()">×</p>
-                            </div>
-                        </div>
-                        <div class="special4infoholder">
-                            <div style="display: flex; justify-content: center;">
-                                <!--The table-->
-                                <div class="infoholdergeneralflexer">
-                                    <div class="infoholderpfixer">
-                                        <p>hi I am special4</p>
-                                    </div>
-                                    <table class="sideinfotableformatter">
-                                        <tbody>
-                                            <tr>
-                                                <th>Classes</th>
-                                                <th>Time</th>
-                                            </tr>
-                                            <tr>
-                                                <td>P1</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P2</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P3</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P4</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P5</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P6</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P7</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P8</td>
-                                                <td>blah</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            <p class="sideinfocloserbutton" onclick="special4()">×</p>
-                            </div>
-                        </div>
-                        <div class="special5infoholder">
-                            <div style="display: flex; justify-content: center;">
-                                <!--The table-->
-                                <div class="infoholdergeneralflexer">
-                                    <div class="infoholderpfixer">
-                                        <p>hi I am special5</p>
-                                    </div>
-                                    <table class="sideinfotableformatter">
-                                        <tbody>
-                                            <tr>
-                                                <th>Classes</th>
-                                                <th>Time</th>
-                                            </tr>
-                                            <tr>
-                                                <td>P1</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P2</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P3</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P4</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P5</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P6</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P7</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P8</td>
-                                                <td>blah</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            <p class="sideinfocloserbutton" onclick="special5()">×</p>
-                            </div>
-                        </div>
-                        <div class="special6infoholder">
-                            <div style="display: flex; justify-content: center;">
-                                <!--The table-->
-                                <div class="infoholdergeneralflexer">
-                                    <div class="infoholderpfixer">
-                                        <p>hi I am special6</p>
-                                    </div>
-                                    <table class="sideinfotableformatter">
-                                        <tbody>
-                                            <tr>
-                                                <th>Classes</th>
-                                                <th>Time</th>
-                                            </tr>
-                                            <tr>
-                                                <td>P1</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P2</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P3</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P4</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P5</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P6</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P7</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P8</td>
-                                                <td>blah</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            <p class="sideinfocloserbutton" onclick="special6()">×</p>
-                            </div>
-                        </div>
-                        <div class="special7infoholder">
-                            <div style="display: flex; justify-content: center;">
-                                <!--The table-->
-                                <div class="infoholdergeneralflexer">
-                                    <div class="infoholderpfixer">
-                                        <p>hi I am special7</p>
-                                    </div>
-                                    <table class="sideinfotableformatter">
-                                        <tbody>
-                                            <tr>
-                                                <th>Classes</th>
-                                                <th>Time</th>
-                                            </tr>
-                                            <tr>
-                                                <td>P1</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P2</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P3</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P4</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P5</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P6</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P7</td>
-                                                <td>blah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>P8</td>
-                                                <td>blah</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            <p class="sideinfocloserbutton" onclick="special7()">×</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
-    </body>
+						<!--Data cards-->
+
+						<div class="special1infoholder">
+							<div style="display: flex; justify-content: center">
+								<!--The table-->
+								<div class="infoholdergeneralflexer">
+									<div class="infoholderpfixer">
+										<p>hi I am special1</p>
+									</div>
+									<table class="sideinfotableformatter">
+										<tbody>
+											<tr>
+												<th>Classes</th>
+												<th>Time</th>
+											</tr>
+											<tr>
+												<td>P1</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P2</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P3</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P4</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P5</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P6</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P7</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P8</td>
+												<td>blah</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<p class="sideinfocloserbutton" onclick="special1()">×</p>
+							</div>
+						</div>
+						<div class="special2infoholder">
+							<div style="display: flex; justify-content: center">
+								<!--The table-->
+								<div class="infoholdergeneralflexer">
+									<div class="infoholderpfixer">
+										<p>hi I am special2</p>
+									</div>
+									<table class="sideinfotableformatter">
+										<tbody>
+											<tr>
+												<th>Classes</th>
+												<th>Time</th>
+											</tr>
+											<tr>
+												<td>P1</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P2</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P3</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P4</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P5</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P6</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P7</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P8</td>
+												<td>blah</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<p class="sideinfocloserbutton" onclick="special2()">×</p>
+							</div>
+						</div>
+						<div class="special3infoholder">
+							<div style="display: flex; justify-content: center">
+								<!--The table-->
+								<div class="infoholdergeneralflexer">
+									<div class="infoholderpfixer">
+										<p>hi I am special3</p>
+									</div>
+									<table class="sideinfotableformatter">
+										<tbody>
+											<tr>
+												<th>Classes</th>
+												<th>Time</th>
+											</tr>
+											<tr>
+												<td>P1</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P2</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P3</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P4</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P5</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P6</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P7</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P8</td>
+												<td>blah</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<p class="sideinfocloserbutton" onclick="special3()">×</p>
+							</div>
+						</div>
+						<div class="special4infoholder">
+							<div style="display: flex; justify-content: center">
+								<!--The table-->
+								<div class="infoholdergeneralflexer">
+									<div class="infoholderpfixer">
+										<p>hi I am special4</p>
+									</div>
+									<table class="sideinfotableformatter">
+										<tbody>
+											<tr>
+												<th>Classes</th>
+												<th>Time</th>
+											</tr>
+											<tr>
+												<td>P1</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P2</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P3</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P4</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P5</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P6</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P7</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P8</td>
+												<td>blah</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<p class="sideinfocloserbutton" onclick="special4()">×</p>
+							</div>
+						</div>
+						<div class="special5infoholder">
+							<div style="display: flex; justify-content: center">
+								<!--The table-->
+								<div class="infoholdergeneralflexer">
+									<div class="infoholderpfixer">
+										<p>hi I am special5</p>
+									</div>
+									<table class="sideinfotableformatter">
+										<tbody>
+											<tr>
+												<th>Classes</th>
+												<th>Time</th>
+											</tr>
+											<tr>
+												<td>P1</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P2</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P3</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P4</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P5</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P6</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P7</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P8</td>
+												<td>blah</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<p class="sideinfocloserbutton" onclick="special5()">×</p>
+							</div>
+						</div>
+						<div class="special6infoholder">
+							<div style="display: flex; justify-content: center">
+								<!--The table-->
+								<div class="infoholdergeneralflexer">
+									<div class="infoholderpfixer">
+										<p>hi I am special6</p>
+									</div>
+									<table class="sideinfotableformatter">
+										<tbody>
+											<tr>
+												<th>Classes</th>
+												<th>Time</th>
+											</tr>
+											<tr>
+												<td>P1</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P2</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P3</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P4</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P5</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P6</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P7</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P8</td>
+												<td>blah</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<p class="sideinfocloserbutton" onclick="special6()">×</p>
+							</div>
+						</div>
+						<div class="special7infoholder">
+							<div style="display: flex; justify-content: center">
+								<!--The table-->
+								<div class="infoholdergeneralflexer">
+									<div class="infoholderpfixer">
+										<p>hi I am special7</p>
+									</div>
+									<table class="sideinfotableformatter">
+										<tbody>
+											<tr>
+												<th>Classes</th>
+												<th>Time</th>
+											</tr>
+											<tr>
+												<td>P1</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P2</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P3</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P4</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P5</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P6</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P7</td>
+												<td>blah</td>
+											</tr>
+											<tr>
+												<td>P8</td>
+												<td>blah</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<p class="sideinfocloserbutton" onclick="special7()">×</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br />
+		<br />
+		<br />
+		<br />
+	</body>
 </html>
